@@ -1,0 +1,13 @@
+<h1>Movies#index</h1>
+<p>Find me in app/views/movies/index.html.erb</p>
+
+<% @movies.each do |m| %>
+
+<p><%= m.name %></p>
+<p><%= m.year %></p>
+<p><%= m.director %></p>
+<p><%= m.rating %></p>
+
+<% end %>
+
+<%= link_to "New Movie", new_movie_path %>
