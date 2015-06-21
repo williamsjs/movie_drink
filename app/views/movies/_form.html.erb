@@ -1,0 +1,27 @@
+<%= form_for(@movie) do |f| %>
+
+  <div id="new-movie-form">
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :director %>
+      <%= f.text_field :director %>
+    </div>
+  </div>
+
+    <div id="new-actor-form">
+      <%= f.fields_for(:actors) do |ff| %>
+    </div>
+    <div class="field">
+      <%= ff.label "Actor Name" %>
+      <%= ff.text_field :name %>
+    </div>
+
+    <% end %>
+
+    <div class="field">
+      <%= f.submit "Submit!" %>
+    </div>
+<% end %>

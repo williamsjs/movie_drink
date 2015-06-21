@@ -1,4 +1,4 @@
-<h1>Movies#index</h1>
+<h1>Movies</h1>
 <p>Find me in app/views/movies/index.html.erb</p>
 
 <% @movies.each do |m| %>
@@ -7,7 +7,13 @@
 <p><%= m.year %></p>
 <p><%= m.director %></p>
 <p><%= m.rating %></p>
+  <% unless m.actors.nil? %>
+   <% m.actors.each do |a| %>
+   <p><%= a.name %></p>
+   <% end %>
+  <% end %>
 
+    <%= link_to 'Delete', m, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
 
 <%= link_to "New Movie", new_movie_path %>
