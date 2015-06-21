@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   before_action :logged_in?
 
-  before_action :set_movie, only: [:show, :edit, :edit, :destroy, :update]
+  before_action :set_movie, only: [:show, :edit, :edit, :destroy, :update, :drink]
   before_action :set_user, only: [:index, :new, :create]
 
   def index
@@ -13,6 +13,10 @@ class MoviesController < ApplicationController
   end
 
   def show
+  end
+
+  def drink
+
   end
 
   def create

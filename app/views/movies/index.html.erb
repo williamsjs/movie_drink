@@ -1,8 +1,8 @@
 <h1>Movies</h1>
-<p>Find me in app/views/movies/index.html.erb</p>
 
 <% @movies.each do |m| %>
 
+<div class="movie">
 <p><%= m.name %></p>
 <p><%= m.year %></p>
 <p><%= m.director %></p>
@@ -13,7 +13,9 @@
    <% end %>
   <% end %>
 
-    <%= link_to 'Delete', m, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to "Drink Tally", drink_movie_path(m) %>
+    <%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>
+</div>
 <% end %>
 
 <%= link_to "New Movie", new_movie_path %>

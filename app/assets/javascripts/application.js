@@ -17,3 +17,12 @@
 function itsAlive() {
   alert("I'm trapped in here, get me out!");
 }
+
+function hideMovie() {
+  $('.delete-movie').on('click', function() {
+    $(this).closest('.movie').fadeOut(1000);
+  });
+}
+
+
+$(hideMovie)

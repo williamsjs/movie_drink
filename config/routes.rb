@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   resources :actors
   resources :users
-  resources :movies
+  resources :movies do
+    member do
+      get "drink"
+    end
+  end
 
   root 'movies#index'
   get 'sessions/login'
