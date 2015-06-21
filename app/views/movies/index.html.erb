@@ -7,11 +7,6 @@
 <p><%= m.year %></p>
 <p><%= m.director %></p>
 <p><%= m.rating %></p>
-  <% unless m.actors.nil? %>
-   <% m.actors.each do |a| %>
-   <p><%= a.name %></p>
-   <% end %>
-  <% end %>
 
     <%= link_to "Drink Tally", drink_movie_path(m) %>
     <%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>

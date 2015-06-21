@@ -1,9 +1,6 @@
 class Movie < ActiveRecord::Base
   belongs_to :user
-  has_many :actors
   validates :name, :year, presence: true
-
-  accepts_nested_attributes_for :actors, reject_if: :all_blank
 
   def get_rating(name)
     get_movie(name)['results'][0]['vote_average']
