@@ -3,12 +3,20 @@ class Movie < ActiveRecord::Base
   validates :name, :year, presence: true
 
   def get_rating(name)
-    get_movie(name)['results'][0]['vote_average']
+    if Movie.find_by_name(name)
+      self.rating
+    else
+      get_movie(name)['results'][0]['vote_average']
+    end
   end
 
   def get_year(name)
-    date = get_movie(name)['results'][0]['release_date']
-    date[0..3]
+    if Movie.find_by_name(name)
+      self.year
+    else
+      date = get_movie(name)['results'][0]['release_date']
+      date[0..3]
+    end
   end
 
   private

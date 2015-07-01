@@ -21,15 +21,19 @@ class MoviesController < ApplicationController
 
   def create
     @movie = Movie.new(movie_params)
-    @movie.rating = @movie.get_rating(@movie.name)
-    @movie.year = @movie.get_year(@movie.name)
-    @movie.user_id = @user.id
-    respond_to do |format|
-      if @movie.save
-        format.html { redirect_to movies_path, notice: 'Movie was successfully created.' }
-      else
-        format.html { render :new }
-        format.json { render json: @movie.errors, status: :unprocessable_entity }
+    if Movie.find_by_name(@movie.name)
+      redirect_to movies_path, notice: "Movie already saved in database"
+    else
+      @movie.rating = @movie.get_rating(@movie.name)
+      @movie.year = @movie.get_year(@movie.name)
+      @movie.user_id = @user.id
+      respond_to do |format|
+        if @movie.save
+          format.html { redirect_to movies_path, notice: 'Movie was successfully created.' }
+        else
+          format.html { render :new }
+          format.json { render json: @movie.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
