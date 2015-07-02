@@ -1,10 +1,10 @@
 <div id="login-page">
 
-  <%= link_to "Login", "#login-modal", data: {toggle: 'modal'}, class: "btn btn-lg btn-success"%>
+  <%= link_to "Login", "#login-modal", data: {toggle: 'modal'}, class: "btn btn-lg btn-success", id: "login"%>
 
   <%= render partial: "modal_login" %>
 
-  <%= link_to "Signup", "#signup-modal", data: {toggle: 'modal'} %>
+  <%= link_to "Signup", "#signup-modal", data: {toggle: 'modal'}, id: "signup" %>
 
   <%= render partial: "signup" %>
 

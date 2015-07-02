@@ -22,7 +22,8 @@ class MoviesController < ApplicationController
   def create
     @movie = Movie.new(movie_params)
     if Movie.find_by_name(@movie.name)
-      redirect_to movies_path, notice: "Movie already saved in database"
+      @user.movies << @movie
+      redirect_to movies_path
     else
       @movie.rating = @movie.get_rating(@movie.name)
       @movie.year = @movie.get_year(@movie.name)

@@ -14,9 +14,26 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+$lightblue: #f85047;
 
+body {
+  background-color: #34e8f1;
+}
  #login-page {
    text-align: center;
+
+   #login {
+     background-color: $lightblue;
+     color: white;
+     margin-top: 100px;
+   }
+
+   #signup {
+     color: black;
+     font-weight: bold;
+     display: block;
+     margin-top: 7px;
+   }
 
    .modal {
      width: 50%;
@@ -28,4 +45,12 @@
 
  #main {
    margin-left: 25px;
+ }
+
+ .navbar {
+   background-color: $lightblue;
+
+   li {
+     background-color: $lightblue;
+   }
  }
