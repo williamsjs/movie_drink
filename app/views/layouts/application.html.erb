@@ -8,14 +8,20 @@
 </head>
 <body>
 <p class="notice"><%= notice %></p>
-  <% if session[:user_id] %>
-    <%= content_tag(:nav, class: "navbar navbar-default") do %>
-        <ul class="nav navbar-nav">
-          <li class="active"><%= link_to "Logout!", sessions_logout_path if session[:user_id]%></li>
-          <li class="active"><%= link_to "Movies", movies_path if session[:user_id]%></li>
-        </ul>
+    <% if session[:user_id] %>
+      <%= content_tag(:nav, class: "navbar navbar-default") do %>
+          <ul class="nav navbar-nav">
+            <li class="active"><%= link_to(sessions_logout_path) do %>
+              <span class="glyphicon glyphicon-object-align-left"> </span><%= "Logout!"%>
+            <% end %>
+            </li>
+            <li class="active"><%= link_to(movies_path) do %>
+              <span class="glyphicon glyphicon-play"></span><%= "Movies"%>
+            <% end %>
+            </li>
+          </ul>
+      <% end %>
     <% end %>
-  <% end %>
   </div>
   <div id="main">
     <%= yield %>
