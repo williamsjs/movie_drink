@@ -30,7 +30,7 @@ class MoviesController < ApplicationController
       @movie.user_id = @user.id
       respond_to do |format|
         if @movie.save
-          format.html { redirect_to movies_path, notice: 'Movie was successfully created.' }
+          format.html { redirect_to movies_path }
         else
           format.html { render :new }
           format.json { render json: @movie.errors, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MoviesController < ApplicationController
   def destroy
     @movie.destroy
     respond_to do |format|
-      format.html { redirect_to movies_path, notice: "Movie Destroyed" }
+      format.html { redirect_to movies_path }
     end
   end
 
