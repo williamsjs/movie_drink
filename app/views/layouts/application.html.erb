@@ -24,7 +24,7 @@
               <i class="fa fa-beer"></i><%= "Beer" %>
             <% end %>
             </li>
-            <%= form_for(Movie.new, class: "navbar-form navbar-left", role: "search") do |f|%>
+            <%= form_for(Movie.new, html: { class: "navbar-form navbar-left", role: "search" }) do |f|%>
                 <div class="form-group">
                   <%= f.text_field :name, class: "form-control", placeholder: "Search" %>
                 </div>
@@ -42,7 +42,6 @@
   </div>
   <div id="main">
     <%= yield %>
-
   </div>
 </body>
 </html>
