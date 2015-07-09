@@ -26,9 +26,9 @@
             </li>
             <%= form_for(Movie.new, html: { class: "navbar-form navbar-left", role: "search" }) do |f|%>
                 <div class="form-group">
-                  <%= f.text_field :name, class: "form-control", placeholder: "Search" %>
+                  <%= f.text_field :name, class: "form-control", placeholder: "Movie Name" %>
                 </div>
-                  <%= f.submit "Search Movie", class: "btn btn-default" %>
+                  <%= f.submit "Add Movie", class: "btn btn-default" %>
             <% end %>
           </ul>
           <ul class="nav navbar-nav navbar-right" id="user-link">
