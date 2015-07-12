@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
   before_action :logged_in?
-  before_action :set_movie, only: [:show, :edit, :edit, :destroy, :update, :drink]
+  before_action :set_movie, only: [:show, :edit, :edit, :destroy, :update]
   before_action :set_user, only: [:index, :new, :create]
 
   def index
@@ -14,10 +14,6 @@ class MoviesController < ApplicationController
   def show
   end
 
-  def drink
-
-  end
-
   def create
     @movie = Movie.new(movie_params)
     @movie.update(rating: @movie.get_rating, year: @movie.get_year, user: @user)
@@ -26,7 +22,7 @@ class MoviesController < ApplicationController
       if @movie.save
         format.html { redirect_to movies_path }
       else
-        format.html { render :new }
+        format.html { redirect_to movies_path, notice: "No movie of that name was found" }
         format.json { render json: @movie.errors, status: :unprocessable_entity }
       end
     end

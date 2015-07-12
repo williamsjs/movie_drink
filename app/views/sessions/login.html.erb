@@ -1,11 +1,19 @@
 <div id="login-page">
 
-  <%= link_to "Login", "#login-modal", data: {toggle: 'modal'}, class: "btn btn-lg btn-success", id: "login"%>
+  <%= render partial: "login" %>
 
-  <%= render partial: "modal_login" %>
+</div>
 
-  <%= link_to "Signup", "#signup-modal", data: {toggle: 'modal'}, id: "signup" %>
-
-  <%= render partial: "signup" %>
-
+<div class="modal">
+  <label for="modal-1">
+    <div class="modal-trigger">Signup</div>
+  </label>
+  <input class="modal-state" id="modal-1" type="checkbox" />
+  <div class="modal-window">
+    <div class="modal-inner">
+      <label class="modal-close" for="modal-1"></label>
+      <h1>Login</h1>
+      <%= render partial: "signup" %>
+    </div>
+  </div>
 </div>

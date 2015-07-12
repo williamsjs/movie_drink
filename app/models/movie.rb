@@ -1,5 +1,6 @@
 class Movie < ActiveRecord::Base
   belongs_to :user
+  validates :year, presence: true
 
   def get_rating
     get_movie(name)['results'][0]['vote_average'] unless get_movie(name)['results'] == []

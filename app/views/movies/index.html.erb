@@ -1,10 +1,11 @@
 <div class="hero">
 	<div class="hero-inner">
-    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
-" alt="Logo Image"></a>
+    <a href="" class="hero-logo"><img src="<%= asset_url('film.png') %>
+			" alt="Logo Image"></a>
 		<div class="hero-copy">
-			<h1>Short description of Product</h1>
-			<p>A few reasons why this product is worth using, who it's for and why they need it.</p>
+			<h1>Movie Beer</h1>
+			<p>Movie Beer is an app geared towards your alcohol needs.  You enter a movie, we process all of the movie details of
+				that movie (the rating) and give you back a recommended beer to go along with that movie.</p>
 		</div>
     <button>Learn More</button>
 	</div>
@@ -22,7 +23,6 @@
 	<p><%= m.director %></p>
 	<p><%= m.rating %></p>
 
-	    <%= link_to "Drink Tally", drink_movie_path(m) %>
 	    <%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>
 	</div>
 <% end %>
