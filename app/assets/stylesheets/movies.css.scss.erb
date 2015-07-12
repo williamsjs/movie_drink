@@ -218,10 +218,10 @@ header.navigation {
 
       input[type=search] {
         @include box-sizing(border-box);
-        background: $navigation-search-background;
+        background: black;
         border-radius: $base-border-radius * 2;
         border: $navigation-search-border;
-        color: $navigation-color;
+        color: white;
         font-size: 0.9em;
         font-style: italic;
         margin: 0;
@@ -233,10 +233,9 @@ header.navigation {
         }
       }
 
-      button[type=submit] {
-        @include button(flat, $navigation-search-background);
-        bottom: 0.3em;
-        left: auto;
+      input[type=submit] {
+        @include button(pill, grey);
+        left: 11em;
         outline: none;
         padding: 0 9px;
         position: absolute;
