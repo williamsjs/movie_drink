@@ -8,34 +8,48 @@
 </head>
 <body>
 <p class="notice"><%= notice %></p>
-    <% if session[:user_id] %>
-    <% user = User.find(session[:user_id]) %>
-      <%= content_tag(:nav, class: "navbar navbar-default") do %>
-          <ul class="nav navbar-nav">
-            <li class="active"><%= link_to(sessions_logout_path) do %>
-              <i class="fa fa-sign-out"></i><%= "Logout!"%>
-            <% end %>
-            </li>
-            <li class="active"><%= link_to(movies_path) do %>
-              <span class="glyphicon glyphicon-play"></span><%= "Movies"%>
-            <% end %>
-            </li>
-            <li class="active"><%= link_to(movies_path) do %>
-              <i class="fa fa-beer"></i><%= "Beer" %>
-            <% end %>
-            </li>
-            <%= form_for(Movie.new, html: { class: "navbar-form navbar-left", role: "search" }) do |f|%>
-                <div class="form-group">
-                  <%= f.text_field :name, class: "form-control", placeholder: "Movie Name" %>
-                </div>
-                  <%= f.submit "Add Movie", class: "btn btn-default" %>
-            <% end %>
-          </ul>
-          <ul class="nav navbar-nav navbar-right" id="user-link">
-            <li class="active"><%= link_to(edit_user_path(user)) do %>
-              <span class="glyphicon glyphicon-user"></span>
-            <% end %>
-            </li>
+    <% if session[:user_id] && User.first%>
+      <% user = User.find(session[:user_id]) %>
+      <%= content_tag(:header, class: "navigation", role: "banner") do %>
+          <div class="navigation-wrapper">
+            <a href="javascript:void(0)" class="logo">
+              <img src='<%= asset_path("clint.png") %>' alt="Logo Image">
+            </a>
+            <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+            <nav role="navigation">
+              <ul id="js-navigation-menu" class="navigation-menu show">
+                <li class="nav-link"><%= link_to(sessions_logout_path) do %>
+                  <i class="fa fa-sign-out"></i><%= "Logout"%>
+                <% end %>
+                </li>
+                <li class="nav-link"><%= link_to(movies_path) do %>
+                  <i class="fa fa-play"></i><%= "Movies"%>
+                <% end %>
+                </li>
+                <li class="nav-link"><%= link_to(movies_path) do %>
+                  <i class="fa fa-beer"></i><%= "Beer" %>
+                <% end %>
+                </li>
+                <li class="nav-link"><%= link_to(edit_user_path(user)) do %>
+                  <i class="icon-user"></i><%= "Edit User" %>
+                <% end %>
+                </li>
+              </ul>
+            </nav>
+            <div class="navigation-tools">
+              <div class="search-bar">
+                <%= form_for(Movie.new, html: { class: "navbar-form navbar-left", role: "search" }) do |f|%>
+                    <div class="form-group">
+                      <%= f.text_field :name, class: "form-control", placeholder: "Movie Name" %>
+                    </div>
+                      <%= f.submit "Add Movie" %>
+                <% end %>
+              </div>
+            </div>
+
+
+          <ul id="user-link">
+
           </ul>
       <% end %>
     <% end %>

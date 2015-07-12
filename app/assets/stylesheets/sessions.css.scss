@@ -1,0 +1,26 @@
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#login-page {
+  text-align: center;
+  #login {
+    background-color: red;
+    color: white;
+    margin-top: 100px;
+  }
+
+  #signup {
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin-top: 7px;
+  }
+
+  .modal {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+  }
+}

@@ -1,16 +1,28 @@
+<div class="hero">
+	<div class="hero-inner">
+    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
+" alt="Logo Image"></a>
+		<div class="hero-copy">
+			<h1>Short description of Product</h1>
+			<p>A few reasons why this product is worth using, who it's for and why they need it.</p>
+		</div>
+    <button>Learn More</button>
+	</div>
+</div>
+
+
+
 <h1>Movies</h1>
 
 <% @movies.each do |m| %>
 
-<div class="movie">
-<p><%= m.name %></p>
-<p><%= m.year %></p>
-<p><%= m.director %></p>
-<p><%= m.rating %></p>
+	<div class="movie">
+	<p><%= m.name %></p>
+	<p><%= m.year %></p>
+	<p><%= m.director %></p>
+	<p><%= m.rating %></p>
 
-    <%= link_to "Drink Tally", drink_movie_path(m) %>
-    <%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>
-</div>
+	    <%= link_to "Drink Tally", drink_movie_path(m) %>
+	    <%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>
+	</div>
 <% end %>
-
-<span class="glyphicon glyphicon-plus" id="movie-span"><%= link_to "New Movie", new_movie_path, id: "new-movie-link" %></span>

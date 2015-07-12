@@ -20,20 +20,14 @@ class MoviesController < ApplicationController
 
   def create
     @movie = Movie.new(movie_params)
-    if Movie.find_by_name(@movie.name)
-      @user.movies << @movie
-      redirect_to movies_path
-    else
-      @movie.rating = @movie.get_rating(@movie.name)
-      @movie.year = @movie.get_year(@movie.name)
-      @movie.user_id = @user.id
-      respond_to do |format|
-        if @movie.save
-          format.html { redirect_to movies_path }
-        else
-          format.html { render :new }
-          format.json { render json: @movie.errors, status: :unprocessable_entity }
-        end
+    @movie.update(rating: @movie.get_rating, year: @movie.get_year, user: @user)
+
+    respond_to do |format|
+      if @movie.save
+        format.html { redirect_to movies_path }
+      else
+        format.html { render :new }
+        format.json { render json: @movie.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -72,7 +66,7 @@ class MoviesController < ApplicationController
     end
 
     def movie_params
-      params.require(:movie).permit(:name, :year, :rating, :user_id)
+      params.require(:movie).permit(:name)
     end
 
 end

@@ -1,19 +1,12 @@
 class Movie < ActiveRecord::Base
   belongs_to :user
-  validates :name, :year, presence: true
 
-  def get_rating(name)
-    if Movie.find_by_name(name)
-      self.rating
-    else
-      get_movie(name)['results'][0]['vote_average']
-    end
+  def get_rating
+    get_movie(name)['results'][0]['vote_average'] unless get_movie(name)['results'] == []
   end
 
-  def get_year(name)
-    if Movie.find_by_name(name)
-      self.year
-    else
+  def get_year
+    if get_movie(name)['results'] != []
       date = get_movie(name)['results'][0]['release_date']
       date[0..3]
     end
