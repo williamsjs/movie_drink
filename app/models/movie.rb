@@ -1,6 +1,8 @@
 class Movie < ActiveRecord::Base
   belongs_to :user
+  has_many :beers
   validates :year, presence: true
+  after_create :create_beer
 
   def get_rating
     get_movie(name)['results'][0]['vote_average'] unless get_movie(name)['results'] == []
@@ -11,6 +13,10 @@ class Movie < ActiveRecord::Base
       date = get_movie(name)['results'][0]['release_date']
       date[0..3]
     end
+  end
+
+  def create_beer
+    Beer.create(movie: self)
   end
 
   private
