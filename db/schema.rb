@@ -11,23 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150713034648) do
+ActiveRecord::Schema.define(version: 20150718203448) do
 
   create_table "beers", force: :cascade do |t|
     t.string   "name"
+    t.integer  "user_id"
+    t.integer  "movie_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.integer  "movie_id"
     t.string   "abv"
     t.text     "description"
     t.string   "url_image"
     t.string   "style"
+    t.string   "location"
   end
 
   create_table "movies", force: :cascade do |t|
     t.string   "name"
     t.integer  "year"
-    t.string   "director"
     t.float    "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

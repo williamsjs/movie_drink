@@ -1,3 +1,9 @@
-<% @beers.each do |b| %>
-  <h1><%= b.name %></h1>
-<% end %>
+<div id="beer-index">
+  <% @beers.each do |b| %>
+    <p><%= b.name %></p>
+    <p><%= b.description %></p>
+    <img src="<%= b.url_image %>" />
+
+    <%= link_to 'Delete', b, method: :delete, class: "delete-beer" %>
+  <% end %>
+</div>

@@ -1,15 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  year: 1
-  director: MyString
-  rating: 1
+  name: "Jaws"
+  year: 1978
   user: :one
 
 two:
-  name: MyString
-  year: 1
-  director: MyString
-  rating: 1
+  name: "Star Wars"
+  year: "1978"
   user: :one

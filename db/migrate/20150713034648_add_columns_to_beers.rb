@@ -4,5 +4,6 @@ class AddColumnsToBeers < ActiveRecord::Migration
     add_column :beers, :description, :text
     add_column :beers, :url_image, :string
     add_column :beers, :style, :string
+    add_column :beers, :location, :string
   end
 end

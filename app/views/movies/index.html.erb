@@ -4,7 +4,7 @@
 			" alt="Logo Image"></a>
 		<div class="hero-copy">
 			<h1>Movie Beer</h1>
-			<p>Movie Beer is an app geared towards your alcohol needs.  You enter a movie, we process all of the movie details of
+			<p>Movie Beer is an app geared towards your alcohol needs.  You enter a movie, we process all of the details of
 				that movie (the rating) and give you back a recommended beer to go along with that movie.</p>
 		</div>
     <button>Learn More</button>
@@ -20,7 +20,6 @@
 	<div class="movie">
 	<p><%= m.name %></p>
 	<p><%= m.year %></p>
-	<p><%= m.director %></p>
 	<p><%= m.rating %></p>
 
 	    <%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>

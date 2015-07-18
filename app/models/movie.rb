@@ -16,7 +16,7 @@ class Movie < ActiveRecord::Base
   end
 
   def create_beer
-    Beer.create(movie: self)
+    Beer.create(movie_id: id, user: user)
   end
 
   private

@@ -1,19 +1,33 @@
 <div id="login-page">
 
-  <%= render partial: "login" %>
+  <h1>Drink Machine</h1>
+  <div id="sign-in">
+    <%= form_tag do %>
+      <div class="field">
+        <%= label_tag :email %>
+        <%= text_field_tag :email %>
+      </div>
+      <div class="field">
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
+      </div>
+      <div class="submit">
+        <%= submit_tag "Login", class: "modal-trigger" %>
+      </div>
+    <% end %>
+  </div>
 
-</div>
-
-<div class="modal">
-  <label for="modal-1">
-    <div class="modal-trigger">Signup</div>
-  </label>
-  <input class="modal-state" id="modal-1" type="checkbox" />
-  <div class="modal-window">
-    <div class="modal-inner">
-      <label class="modal-close" for="modal-1"></label>
-      <h1>Login</h1>
-      <%= render partial: "signup" %>
+  <div class="modal">
+    <label for="modal-1">
+      <div>Signup</div>
+    </label>
+    <input class="modal-state" id="modal-1" type="checkbox" />
+    <div class="modal-window">
+      <div class="modal-inner">
+        <label class="modal-close" for="modal-1"></label>
+        <%= render partial: "signup" %>
+      </div>
     </div>
   </div>
+
 </div>

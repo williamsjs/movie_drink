@@ -3,6 +3,7 @@ class CreateBeers < ActiveRecord::Migration
     create_table :beers do |t|
       t.string :name
       t.integer :user_id
+      t.integer :movie_id
 
       t.timestamps null: false
     end

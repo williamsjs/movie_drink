@@ -60,7 +60,7 @@ header.navigation {
 
   .navigation-wrapper {
     @include clearfix;
-    @include outer-container;
+    @include outer-container(85%);
     position: relative;
     z-index: 9999;
   }
@@ -235,7 +235,7 @@ header.navigation {
 
       input[type=submit] {
         @include button(pill, black);
-        left: 11em;
+        left: 16em;
         outline: none;
         padding: 0 9px;
         position: absolute;
@@ -291,8 +291,9 @@ header.navigation {
   }
 
   .hero-inner {
-    @include outer-container;
+    @include outer-container(40%);
     @include clearfix;
+    float: left;
     color: $hero-color;
     margin: auto;
     padding: 3.5em;
@@ -314,7 +315,7 @@ header.navigation {
         font-weight: 200;
         line-height: 1.4em;
         margin: 0 auto 3em auto;
-
+        text-align: left;
         @include media($large-screen) {
           font-size: 1.1em;
           max-width: 40%;
