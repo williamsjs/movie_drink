@@ -4,6 +4,14 @@ class Movie < ActiveRecord::Base
   validates :year, presence: true
   after_create :create_beer
 
+  def redo(user)
+    update(name: get_name, rating: get_rating, year: get_year, poster: get_poster, user: user)
+  end
+
+  def get_name
+    get_movie(name)['results'][0]['original_title'] unless get_movie(name)['results'] == []
+  end
+
   def get_rating
     get_movie(name)['results'][0]['vote_average'] unless get_movie(name)['results'] == []
   end
@@ -13,6 +21,11 @@ class Movie < ActiveRecord::Base
       date = get_movie(name)['results'][0]['release_date']
       date[0..3]
     end
+  end
+
+  def get_poster
+    poster_path = get_movie(name)['results'][0]['poster_path'] unless get_movie(name)['results'] == []
+    "http://image.tmdb.org/t/p/w500/#{poster_path}" unless get_movie(name['results']) == []
   end
 
   def create_beer

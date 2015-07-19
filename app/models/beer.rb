@@ -5,7 +5,7 @@ class Beer < ActiveRecord::Base
 
   def add_details
     beer = nil
-    if movie.rating < 1
+    if movie.rating < 5
       beer = search_beer(bad_beers)
     elsif movie.rating >= 7
       beer = search_beer(great_beers)

@@ -16,8 +16,7 @@ class MoviesController < ApplicationController
 
   def create
     @movie = Movie.new(movie_params)
-    @movie.update(rating: @movie.get_rating, year: @movie.get_year, user: @user)
-
+    @movie.redo(@user)
     respond_to do |format|
       if @movie.save
         format.html { redirect_to movies_path }

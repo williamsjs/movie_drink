@@ -11,17 +11,23 @@
 	</div>
 </div>
 
-
-
 <h1>Movies</h1>
-
+<div class="cards">
 <% @movies.each do |m| %>
-
-	<div class="movie">
-	<p><%= m.name %></p>
-	<p><%= m.year %></p>
-	<p><%= m.rating %></p>
-
-	    <%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>
-	</div>
+		<div class="card">
+			<div class="card-image">
+				<span class="movie-image"><%= image_tag m.get_poster %></span>
+			</div>
+			<div class="card-header">
+	      <%= m.name %>
+	    </div>
+			<div class="card-copy">
+				<p>
+					Year: <%= m.year %>
+				</p>
+				<p> Rating: <%= m.rating %></p>
+				<%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>
+			</div>
+		</div>
 <% end %>
+</div>
