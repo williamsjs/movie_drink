@@ -8,24 +8,33 @@
     <button>Learn More</button>
 	</div>
 </div>
-
-<h1>Movies</h1>
+<h1>Your Movies: </h1>
 <div class="cards">
 <% @movies.each do |m| %>
-		<div class="card">
-			<div class="card-image">
-				<span class="movie-image"><%= image_tag m.get_poster %></span>
-			</div>
-			<div class="card-header">
-	      <%= m.name %>
-	    </div>
-			<div class="card-copy">
-				<p>
-					Year: <%= m.year %>
-				</p>
-				<p> Rating: <%= m.rating %></p>
-				<%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>
-			</div>
+	<div class="card">
+		<div class="card-image">
+			<span class="movie-image"><%= image_tag m.get_poster %></span>
 		</div>
+		<div class="card-header">
+      <%= m.name %>
+    </div>
+		<div class="card-copy">
+			<p>
+				Year: <%= m.year %>
+			</p>
+			<p> Rating: <%= m.rating %></p>
+			<p>Recommended Beer: <a><label for="modal-<%= m.beer %>">Movie Beer</label></a></p>
+			<div class="modal">
+				<input class="modal-state" id="modal-<%= m.beer %>" type="checkbox" />
+				<div class="modal-window">
+					<div class="modal-inner">
+						<label class="modal-close" for="modal-<%= m.beer %>"></label>
+						<%= render partial: "beer", locals: {beer: m.beers.first} %>
+					</div>
+				</div>
+			</div>
+			<%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>
+		</div>
+	</div>
 <% end %>
 </div>

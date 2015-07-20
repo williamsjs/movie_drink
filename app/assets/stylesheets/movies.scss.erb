@@ -7,7 +7,7 @@
   background-color: #c0392b;
   padding: 4px;
   border: 1px solid black;
-  color: black;
+  color: #282828;
   border-radius: 2.5px;
 
   a:hover {
@@ -39,7 +39,7 @@ header.navigation {
 
   $navigation-padding: 1em;
   $navigation-background: #54c891;
-  $navigation-color: #282828;
+  $navigation-color: #414141;
   $navigation-color-hover: white;
   $navigation-height: 60px;
   $navigation-nav-button-background: $base-accent-color;
@@ -234,9 +234,36 @@ header.navigation {
       }
 
       input[type=submit] {
-        @include button(pill, black);
+        @include appearance(none);
+        -webkit-font-smoothing: antialiased;
+        background-color: $action-color;
+        border-radius: $base-border-radius;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: $base-font-family;
+        font-size: $base-font-size;
+        font-weight: 600;
+        line-height: 2;
+        padding: 0.75em 1em;
+        text-decoration: none;
+        user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+
+        &:hover,
+        &:focus {
+          background-color: darken($action-color, 15%);
+          color: #fff;
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+          opacity: 0.5;
+        }
         left: 16em;
-        outline: none;
+        // outline: none;
         padding: 0 9px;
         position: absolute;
         right: 0.3em;
@@ -330,11 +357,12 @@ header.navigation {
   }
 }
 
-.cards {
-  @include display(flex);
-  @include flex-wrap(wrap);
-  @include justify-content(space-between);
-}
+
+  .cards {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    margin-left: 15%
+  }
 
 .card {
   $base-border-color: gainsboro !default;
@@ -353,7 +381,6 @@ header.navigation {
   $card-image-hover-color: #F8F2B4;
 
   @include flex-basis(15em);
-  @include flex-grow(1);
   @include transition (all 0.2s ease-in-out);
   background-color: $card-background;
   border-radius: $base-border-radius;
@@ -361,9 +388,6 @@ header.navigation {
   box-shadow: 0 2px 4px darken($base-background-color, 10%);
   cursor: pointer;
   margin: 0 $card-margin $base-spacing $card-margin;
-  position: relative;
-
-
   .card-image {
     overflow: hidden;
     height: 150px;
@@ -391,6 +415,7 @@ header.navigation {
   }
 
   .card-copy {
+    text-align: center;
     font-size: 0.9em;
     line-height: 1.5em;
     padding: ($base-spacing / 2) ($base-spacing / 2);
@@ -418,6 +443,8 @@ header.navigation {
   }
 }
 
+
+
 .movie-image {
   text-align: center;
   img {
@@ -425,3 +452,174 @@ header.navigation {
     max-width: 223px;
   }
 }
+
+.modal {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $base-font-size: 1em !default;
+  $base-line-height: 1.5em !default;
+  $base-accent-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    color: $base-font-color;
+    line-height: $base-line-height;
+  }
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $modal-padding: 3em;
+  $modal-background: $base-background-color;
+  $modal-close-color: $light-gray;
+  $modal-image-height: 135px;
+  $modal-image-width: $modal-image-height;
+  $modal-trigger-image-width: 300px;
+
+  label {
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  label img {
+    border-radius: $modal-trigger-image-width / 2;
+    display: block;
+    max-width: $modal-trigger-image-width;
+  }
+
+  .modal-state {
+    display: none;
+  }
+
+  .modal-trigger {
+    @include button(flat, $base-accent-color);
+    padding: 0.8em 1em;
+  }
+
+  .modal-window { // overlay
+    @include transition(opacity 0.25s ease);
+    @include position(fixed, 0px 0px 0px 0px);
+    background: rgba(0,0,0, 0.85);
+    opacity: 0;
+    padding-top: 0.6em;
+    text-align: left;
+    visibility: hidden;
+    z-index: 99999999999;
+
+    @include media($large-screen) {
+      padding-top: 10em;
+    }
+
+    .modal-bg {
+      @include position(absolute, 0px 0px 0px 0px);
+      cursor: pointer;
+    }
+  }
+
+  .modal-close {
+    @include position(absolute, ($modal-padding /2) ($modal-padding /2) null null);
+    @include size(1.5em);
+    background: $modal-background;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+      @include position(absolute, 3px 3px 0 50%);
+      @include transform(rotate(45deg));
+      @include size(0.15em 1.5em);
+      background: $modal-close-color;
+      content: '';
+      display: block;
+      margin: -3px 0 0 -1px;
+    }
+
+    &:hover:after,
+    &:hover:before {
+      background: darken($modal-close-color, 10%);
+    }
+
+    &:before {
+      @include transform(rotate(-45deg));
+    }
+  }
+
+  .modal-inner {
+    @include transition(opacity 0.25s ease);
+    background: $modal-background;
+    border-radius: $base-border-radius;
+    margin-top: 0;
+    margin: auto;
+    max-height: 95%;
+    overflow: auto;
+    padding: $modal-padding / 2;
+    position: relative;
+    width: 95%;
+
+    @include media($medium-screen) {
+      max-height: 70%;
+      padding: $modal-padding;
+      width: 60%;
+    }
+
+    @include media($large-screen) {
+      width: 50%;
+    }
+
+    h1 {
+      color: $base-font-color;
+      margin-bottom: 0.6em;
+      text-align: left;
+      text-transform: capitalize;
+    }
+
+    .modal-intro {
+      font-weight: 800;
+    }
+
+    .modal-content {
+      color: $base-font-color;
+
+      @include media($medium-screen) {
+        @include columns(2 8em);
+      }
+    }
+
+    a.cta {
+      color: white;
+      display: inline-block;
+      margin-right: 0.5em;
+      margin-top: 1em;
+
+      &:last-child {
+        padding: 0 2em;
+      }
+    }
+  }
+
+  .modal-state:checked + .modal-window {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-state:checked + .modal-window .modal-inner {
+    top: 0.5em;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-closed {
+  overflow: auto;
+}
+
+// Based on code by Kasper Mikiewicz

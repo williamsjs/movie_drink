@@ -13,15 +13,3 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree
-
-
-
-
-function hideMovie() {
-  $('.delete-movie').on('click', function() {
-    $(this).closest('.movie').fadeOut(1000);
-  });
-}
-
-
-$(hideMovie);

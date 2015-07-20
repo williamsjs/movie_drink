@@ -4,6 +4,10 @@ class Movie < ActiveRecord::Base
   validates :year, presence: true
   after_create :create_beer
 
+  def beer
+    beers.first.id
+  end
+
   def redo(user)
     update(name: get_name, rating: get_rating, year: get_year, poster: get_poster, user: user)
   end

@@ -3,6 +3,7 @@
 @import "base/base";
 @import "users";
 @import "movies";
+@import "beers";
 @import "sessions";
 @import "scaffolds";
 @import "font-awesome";
@@ -11,7 +12,6 @@
 body {
    font-family: $verdana;
    background: #282828;
-   color: #282828;
 }
 
 // $color1: #282828;
