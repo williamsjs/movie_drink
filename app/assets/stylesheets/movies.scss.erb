@@ -38,8 +38,8 @@ header.navigation {
   //////////////////////////////////////////////////////////////////////////////////
 
   $navigation-padding: 1em;
-  $navigation-background: $green;
-  $navigation-color: transparentize(white, 0.3);
+  $navigation-background: #54c891;
+  $navigation-color: #282828;
   $navigation-color-hover: white;
   $navigation-height: 60px;
   $navigation-nav-button-background: $base-accent-color;
@@ -368,7 +368,8 @@ header.navigation {
     overflow: hidden;
     height: 150px;
     max-height: 150px;
-    background-color: $card-image-hover-color;
+    background-color: #2e885d;
+    text-align: center;
 
     img {
       @include transition (all 0.2s ease-in-out);
@@ -417,6 +418,10 @@ header.navigation {
   }
 }
 
-.movie-image img {
-  max-height: 200px;
+.movie-image {
+  text-align: center;
+  img {
+    max-height: 200px;
+    max-width: 223px;
+  }
 }
