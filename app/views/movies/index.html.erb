@@ -1,14 +1,16 @@
 <div class="hero">
 	<div class="hero-inner">
 		<div class="hero-copy">
-			<h1>Movie Beer</h1>
-			<p>Movie Beer is an app geared towards your alcohol needs.  You enter a movie, we process all of the details of
+			<span id="summary">
+				<h1>Movie Beer</h1>
+				<p>Movie Beer is an app geared towards your alcohol needs.  You enter a movie, we process all of the details of
 				that movie (the rating) and give you back a recommended beer to go along with that movie.</p>
+			</span>
 		</div>
     <button>Learn More</button>
 	</div>
+	<span id="quote">"I've been waiting for you, <%= @user.name %>. We meet again at last. The circle is now complete. When I left you, I was but the learner; now I am the master."</span>
 </div>
-<h1>Your Movies: </h1>
 <div class="cards">
 <% @movies.each do |m| %>
 	<div class="card">
@@ -23,7 +25,7 @@
 				Year: <%= m.year %>
 			</p>
 			<p> Rating: <%= m.rating %></p>
-			<p>Recommended Beer: <a><label for="modal-<%= m.beer %>">Movie Beer</label></a></p>
+			<p><button><label for="modal-<%= m.beer %>"><i class="fa fa-beer"></i>Movie Beer</label></button></p>
 			<div class="modal">
 				<input class="modal-state" id="modal-<%= m.beer %>" type="checkbox" />
 				<div class="modal-window">
@@ -33,7 +35,7 @@
 					</div>
 				</div>
 			</div>
-			<%= link_to 'Delete', m, method: :delete, remote: true, class: "delete-movie" %>
+			<%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, m, method: :delete, remote: true, class: "delete-movie" %>
 		</div>
 	</div>
 <% end %>
