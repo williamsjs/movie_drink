@@ -1,6 +1,8 @@
+<% if !beer.nil? %>
 <ul>
   <li><%= image_tag beer.url_image %></li>
   <li><%= beer.name %></li>
   <li>ABV: <%= beer.abv %></li>
   <li>Description: <%= beer.description %></li>
 </ul>
+<% end %>

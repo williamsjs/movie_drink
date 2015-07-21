@@ -5,7 +5,7 @@ class Movie < ActiveRecord::Base
   after_create :create_beer
 
   def beer
-    beers.first.id
+    beers.first.id unless beers.empty?
   end
 
   def redo(user)
