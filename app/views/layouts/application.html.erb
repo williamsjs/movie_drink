@@ -29,7 +29,7 @@
                   <i class="fa fa-play"></i><%= "Movies"%>
                 <% end %>
                 </li>
-                <li class="nav-link <%= 'active-nav-item' if current_page?(beers_path) %>""><%= link_to(beers_path) do %>
+                <li class="nav-link <%= 'active-nav-item' if current_page?(beers_path) %>"><%= link_to(beers_path) do %>
                   <i class="fa fa-beer"></i><%= "Beer" %>
                 <% end %>
                 </li>
@@ -39,19 +39,25 @@
             </nav>
             <div class="navigation-tools">
               <div class="search-bar">
-                <%= form_for(Movie.new, html: { class: "navbar-form navbar-left", role: "search" }) do |f|%>
+                <%= form_for @movie, remote: true, html: { class: "navbar-form navbar-left", role: "search" } do |f|%>
                     <div class="form-group">
                       <%= f.text_field :name, class: "form-control", placeholder: "Movie Name" %>
                     </div>
-                      <%= f.submit "Add Movie" %>
+                      <%= f.button do %>
+                      <label for="modal-search">Add Movie</label>
+                      <% end %>
                 <% end %>
+                <div class="modal">
+                  <input class="modal-state" id="modal-search" type="checkbox" />
+                  <div class="modal-window">
+                    <div class="modal-inner">
+                      <label class="modal-close" for="modal-search"></label>
+                      <%= render partial: "layouts/search_beer", locals: {user: @user} %>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-
-          <ul id="user-link">
-
-          </ul>
       <% end %>
     <% end %>
   </div>

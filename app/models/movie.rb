@@ -9,27 +9,25 @@ class Movie < ActiveRecord::Base
   end
 
   def redo(user)
-    update(name: get_name, rating: get_rating, year: get_year, poster: get_poster, user: user)
+    update(name: get_name, rating: get_rating, year: get_year, poster: get_poster, user: user) unless get_movie(name)['results'] == []
   end
 
   def get_name
-    get_movie(name)['results'][0]['original_title'] unless get_movie(name)['results'] == []
+    get_movie(name)['results'][0]['original_title']
   end
 
   def get_rating
-    get_movie(name)['results'][0]['vote_average'] unless get_movie(name)['results'] == []
+    get_movie(name)['results'][0]['vote_average']
   end
 
   def get_year
-    if get_movie(name)['results'] != []
-      date = get_movie(name)['results'][0]['release_date']
-      date[0..3]
-    end
+    date = get_movie(name)['results'][0]['release_date']
+    date[0..3]
   end
 
   def get_poster
-    poster_path = get_movie(name)['results'][0]['poster_path'] unless get_movie(name)['results'] == []
-    "http://image.tmdb.org/t/p/w500/#{poster_path}" unless get_movie(name['results']) == []
+    poster_path = get_movie(name)['results'][0]['poster_path']
+    "http://image.tmdb.org/t/p/w500/#{poster_path}" if !poster_path.nil?
   end
 
   def create_beer

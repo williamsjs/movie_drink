@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150721220606) do
+ActiveRecord::Schema.define(version: 20150722161640) do
 
   create_table "beer_quotes", force: :cascade do |t|
     t.text     "quote"
@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 20150721220606) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
-    t.binary   "poster"
+    t.string   "poster"
   end
 
   create_table "users", force: :cascade do |t|

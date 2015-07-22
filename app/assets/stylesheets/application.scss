@@ -210,6 +210,10 @@ header.navigation {
     padding: 0.85em 0.6em 0.7em 0.6em;
     width: 60%;
 
+    input[type="checkbox"]{
+      display: none;
+    }
+
     form {
       position: relative;
 
@@ -230,7 +234,7 @@ header.navigation {
         }
       }
 
-      input[type=submit] {
+      button {
         @include appearance(none);
         -webkit-font-smoothing: antialiased;
         background-color: $action-color;

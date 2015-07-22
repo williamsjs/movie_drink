@@ -3,7 +3,7 @@
   color: white;
 
   .cards {
-    margin-top: 20px;
+    margin: 20px auto auto 2em;
     @include display(flex);
     @include flex-wrap(wrap);
     @include justify-content(space-between);
@@ -52,7 +52,8 @@
         background: $card-image-background;
         border-top-left-radius: $base-border-radius;
         border-top-right-radius: $base-border-radius;
-        width: 50%;
+        width: 75%;
+        min-height: 150px;
       }
     }
 

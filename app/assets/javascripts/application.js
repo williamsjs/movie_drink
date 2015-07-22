@@ -13,3 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree
+
+
+function addCard() {
+  $('button').on('click', function(){
+    $('#movie-cards .cards').append("Poo");
+  });
+}
+
+
+$(addCard);
