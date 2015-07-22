@@ -17,7 +17,7 @@
 
 function addCard() {
   $('button').on('click', function(){
-    $('#movie-cards .cards').append("Poo");
+    $('#movie-cards .cards').append("j<%= User.find(session[:user_id]).movies.last.name %>");
   });
 }
 
