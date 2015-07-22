@@ -24,271 +24,6 @@
   margin-right: 5px;
 }
 
-header.navigation {
-  ///////////////////////////////////////////////////////////////////////////////////
-  $base-border-color: gainsboro !default;
-  $base-border-radius: 3px !default;
-  $base-accent-color: #477DCA !default;
-  $green: #22663a !default;
-  $large-screen: em(860) !default;
-
-  a {
-    text-decoration: none;
-  }
-  //////////////////////////////////////////////////////////////////////////////////
-
-  $navigation-padding: 1em;
-  $navigation-background: #54c891;
-  $navigation-color: #414141;
-  $navigation-color-hover: white;
-  $navigation-height: 60px;
-  $navigation-nav-button-background: $base-accent-color;
-  $navigation-nav-button-background-hover: lighten($navigation-background, 10%);
-  $navigation-nav-button-border: 1px solid lighten($navigation-nav-button-background, 20%);
-  $navigation-search-background: lighten($navigation-background, 5);
-  $navigation-search-border: 1px solid darken($navigation-background, 5);
-  $navigation-active-link-color: transparentize(white, 0.5);
-  $navigation-submenu-padding: 1em;
-  $navigation-submenu-width: 12em;
-  $horizontal-bar-mode: $large-screen;
-
-  background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
-  min-height: $navigation-height;
-  width: 100%;
-  z-index: 999;
-
-  .navigation-wrapper {
-    @include clearfix;
-    @include outer-container(85%);
-    position: relative;
-    z-index: 9999;
-  }
-
-  .logo {
-    float: left;
-    max-height: $navigation-height;
-    padding-left: $navigation-padding;
-    padding-right: 2em;
-
-    img {
-      max-height: $navigation-height;
-      padding: 0.8em 0;
-    }
-  }
-
-  // Mobile view
-
-  .navigation-menu-button {
-    color: $navigation-color;
-    display: block;
-    float: right;
-    font-weight: 700;
-    line-height: $navigation-height;
-    margin: 0;
-    padding-right: 1em;
-    text-transform: uppercase;
-
-    @include media ($horizontal-bar-mode) {
-      display: none;
-    }
-
-    &:focus,
-    &:hover {
-      color: $navigation-color-hover;
-    }
-  }
-
-  // Nav menu
-
-  nav {
-    float: none;
-    min-height: $navigation-height;
-    z-index: 9999999;
-
-    @include media ($horizontal-bar-mode) {
-      float: left;
-    }
-  }
-
-  ul.navigation-menu {
-    -webkit-transform-style: preserve-3d; // stop webkit flicker
-    clear: both;
-    display: none;
-    margin: 0 auto;
-    overflow: visible;
-    padding: 0;
-    width: 100%;
-    z-index: 9999;
-
-    &.show {
-      display: block;
-    }
-
-    @include media ($horizontal-bar-mode) {
-      display: inline;
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  // The nav items
-
-  ul li.nav-link {
-    background: $navigation-background;
-    display: block;
-    line-height: $navigation-height;
-    overflow: hidden;
-    padding-right: 0.8em;
-    text-align: right;
-    width: 100%;
-    z-index: 9999;
-
-    @include media ($horizontal-bar-mode) {
-      background: transparent;
-      display: inline;
-      line-height: $navigation-height;
-      text-decoration: none;
-      width: auto;
-    }
-
-    a {
-      color: $navigation-color;
-      display: inline-block;
-      font-weight: 400;
-
-      @include media ($horizontal-bar-mode) {
-        padding-right: 1em;
-      }
-
-      &:focus,
-      &:hover {
-        color: $navigation-color-hover;
-      }
-    }
-  }
-
-  .active-nav-item a {
-    border-bottom: 1px solid $navigation-active-link-color;
-    padding-bottom: 3px;
-  }
-
-
-
-  // Elements on the far right
-
-  .navigation-tools {
-    background: #505050;
-    clear: both;
-    display: block;
-    height: $navigation-height;
-    padding-left: $navigation-padding / 2;
-    padding-right: $navigation-padding;
-
-    @include media($large-screen) {
-      background: transparent;
-      clear: none;
-      float: right;
-    }
-  }
-
-  .sign-up {
-    @include button(flat, $base-accent-color);
-    display: inline;
-    float: right;
-    font-size: 0.8em;
-    margin-top: 1em;
-    padding: 0.75em 1em;
-    text-transform: uppercase;
-  }
-
-  // Search bar
-
-  .search-bar {
-    $search-bar-border-color: $base-border-color;
-    $search-bar-border: 1px solid $search-bar-border-color;
-    $search-bar-background: lighten($search-bar-border-color, 10%);
-
-    float: left;
-    padding: 0.85em 0.6em 0.7em 0.6em;
-    width: 60%;
-
-    form {
-      position: relative;
-
-      input[type=search] {
-        @include box-sizing(border-box);
-        background: black;
-        border-radius: $base-border-radius * 2;
-        border: $navigation-search-border;
-        color: black;
-        font-size: 0.9em;
-        font-style: italic;
-        margin: 0;
-        padding: 0.5em 0.8em;
-        width: 100%;
-
-        @include media($large-screen) {
-          width: 100%;
-        }
-      }
-
-      input[type=submit] {
-        @include appearance(none);
-        -webkit-font-smoothing: antialiased;
-        background-color: $action-color;
-        border-radius: $base-border-radius;
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font-family: $base-font-family;
-        font-size: $base-font-size;
-        font-weight: 600;
-        line-height: 2;
-        padding: 0.75em 1em;
-        text-decoration: none;
-        user-select: none;
-        vertical-align: middle;
-        white-space: nowrap;
-
-        &:hover,
-        &:focus {
-          background-color: darken($action-color, 15%);
-          color: #fff;
-        }
-
-        &:disabled {
-          cursor: not-allowed;
-          opacity: 0.5;
-        }
-        left: 16em;
-        // outline: none;
-        padding: 0 9px;
-        position: absolute;
-        right: 0.3em;
-        top: 0.3em;
-
-        img {
-          height: 12px;
-          opacity: 0.7;
-          padding: 1px;
-        }
-      }
-    }
-
-    @include media($horizontal-bar-mode) {
-      display: inline-block;
-      position: relative;
-      width: 16em;
-
-      input {
-        @include box-sizing(border-box);
-        display: block;
-      }
-    }
-  }
-}
 
 #main {
   background: #2e885d;
@@ -343,7 +78,11 @@ header.navigation {
     text-align: center;
 
     .hero-copy {
-      text-align: center;
+      #summary {
+        text-align: left;
+        margin: 0 4em 3em;
+        max-width: 60%;
+      }
 
       h1 {
         font-size: 1.6em;
@@ -357,11 +96,8 @@ header.navigation {
       p {
         font-weight: 200;
         line-height: 1.4em;
-        margin: 0 auto 3em auto;
-        text-align: left;
         @include media($large-screen) {
-          font-size: 1.1em;
-          max-width: 40%;
+          font-size: 1.5em;
         }
       }
     }
@@ -654,6 +390,4 @@ header.navigation {
 .modal-closed {
   overflow: auto;
 }
-
-
 // Based on code by Kasper Mikiewicz

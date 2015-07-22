@@ -17,7 +17,7 @@
             <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
             <nav role="navigation">
               <ul id="js-navigation-menu" class="navigation-menu show">
-                <li class="nav-link"><%= link_to(edit_user_path(user)) do %>
+                <li class="nav-link <%= 'active' if current_page?(edit_user_path(user)) %>"><%= link_to(edit_user_path(user)) do %>
                   <i class="fa fa-user"></i>
                 <% end %>
                 </li>
@@ -25,11 +25,11 @@
                   <i class="fa fa-sign-out"></i><%= "Logout"%>
                 <% end %>
                 </li>
-                <li class="nav-link"><%= link_to(movies_path) do %>
+                <li class="nav-link <%= 'active-nav-item' if current_page?(movies_path) || current_page?(root_path) %>"><%= link_to(movies_path) do %>
                   <i class="fa fa-play"></i><%= "Movies"%>
                 <% end %>
                 </li>
-                <li class="nav-link"><%= link_to(beers_path) do %>
+                <li class="nav-link <%= 'active-nav-item' if current_page?(beers_path) %>""><%= link_to(beers_path) do %>
                   <i class="fa fa-beer"></i><%= "Beer" %>
                 <% end %>
                 </li>

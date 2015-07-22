@@ -1,9 +1,18 @@
 <div id="beer-index">
-  <% @beers.each do |b| %>
-    <p><%= b.name %></p>
-    <p><%= b.description %></p>
-    <img src="<%= b.url_image %>" />
-
-    <%= link_to 'Delete', b, method: :delete, class: "delete-beer" %>
-  <% end %>
+  <div class="cards">
+    <% @beers.each do |b| %>
+      <div class="card">
+        <div class="card-image">
+          <img src="<%= b.url_image %>" alt="">
+        </div>
+        <div class="card-header">
+          <%= b.name %>
+        </div>
+        <div class="card-copy">
+          <%= b.description %>
+          <%= link_to 'Delete', b, method: :delete, class: "delete-beer" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
