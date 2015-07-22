@@ -32,6 +32,7 @@
 //HERO
 
 .hero {
+
   ///////////////////////////////////////////////////////////////////////////////////
   $base-border-radius: 3px !default;
   $base-accent-color: #477DCA !default;
@@ -115,7 +116,7 @@
     background: #2e885d;
     @include display(flex);
     @include flex-wrap(wrap);
-    margin-left: 15%;
+    margin-left: 10%;
   }
 
 .card {
@@ -391,3 +392,13 @@
   overflow: auto;
 }
 // Based on code by Kasper Mikiewicz
+@media screen and (max-width: 600px) {
+.hero {
+  visibility: hidden;
+  clear: both;
+  float: left;
+  margin: 10px auto 5px 20px;
+  width: 28%;
+  display: none;
+}
+}
