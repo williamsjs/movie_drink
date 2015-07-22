@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150719034429) do
+ActiveRecord::Schema.define(version: 20150721220606) do
+
+  create_table "beer_quotes", force: :cascade do |t|
+    t.text     "quote"
+    t.integer  "character_id"
+    t.boolean  "positive"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "beers", force: :cascade do |t|
     t.string   "name"
@@ -24,6 +32,22 @@ ActiveRecord::Schema.define(version: 20150719034429) do
     t.string   "url_image"
     t.string   "style"
     t.string   "location"
+  end
+
+  create_table "characters", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "main_image"
+    t.string   "negative_image"
+    t.string   "positive_image"
+  end
+
+  create_table "main_quotes", force: :cascade do |t|
+    t.text     "quote"
+    t.integer  "character_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "movies", force: :cascade do |t|
