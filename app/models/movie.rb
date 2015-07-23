@@ -9,7 +9,7 @@ class Movie < ActiveRecord::Base
   end
 
   def movie_json
-    get_movie(name)
+    get_movie(name.gsub(" ", "%20"))
   end
 
   def redo(user)
