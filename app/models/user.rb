@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   def get_last_beer
     beers.last
   end
+  
 
   def just_created?
     Time.now - movies.last.created_at < 3 unless movies == []
