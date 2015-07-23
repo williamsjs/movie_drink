@@ -12,7 +12,15 @@
 </div>
 
 <% if  @user.just_created? %>
-	<h1>Goal!!!</h1>
+	<div class="modal">
+		<input class="modal-state" id="modal-last-beer" type="checkbox" />
+		<div class="modal-window">
+			<div class="modal-inner">
+				<label class="modal-close" for="modal-last-beer"></label>
+				<%= render partial: "beer", locals: {beer: @user.get_last_beer} %>
+			</div>
+		</div>
+	</div>
 <% end %>
 	<div id="movie-cards">
 		<div class="cards">

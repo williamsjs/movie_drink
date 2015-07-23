@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   end
 
   def just_created?
-    Time.now - movies.last.created_at < 3
+    Time.now - movies.last.created_at < 3 unless movies == []
   end
 
 end
