@@ -5,5 +5,13 @@ function hideMovie() {
   });
 }
 
+function disableButton() {
+  $('#new_movie').submit(function() {
+    $('form button').attr("disabled", true);
+    return true;
+  });
+}
+
 
 $(hideMovie);
+$(disableButton);

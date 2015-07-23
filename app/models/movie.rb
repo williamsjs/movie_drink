@@ -9,7 +9,7 @@ class Movie < ActiveRecord::Base
   end
 
   def redo(user)
-    update(name: get_name, rating: get_rating, year: get_year, poster: get_poster, user: user) unless get_movie(name)['results'] == []
+    update(name: get_name, rating: get_rating, year: get_year, poster: get_poster, user: user) unless get_movie(name)['results'].nil?
   end
 
   def get_name

@@ -10,34 +10,38 @@
 	</div>
 	<span id="quote">"I've been waiting for you, <%= @user.name %>. We meet again at last. The circle is now complete. When I left you, I was but the learner; now I am the master."</span>
 </div>
-<div id="movie-cards">
-	<div class="cards">
-	<% @movies.each do |m| %>
-		<div class="card">
-			<div class="card-image">
-				<span class="movie-image"><%= image_tag m.get_poster %></span>
-			</div>
-			<div class="card-header">
-	      <%= m.name %>
-	    </div>
-			<div class="card-copy">
-				<p>
-					Year: <%= m.year %>
-				</p>
-				<p> Rating: <%= m.rating %></p>
-				<p><button><label for="modal-<%= m.beer %>"><i class="fa fa-beer"></i>Movie Beer</label></button></p>
-				<div class="modal">
-					<input class="modal-state" id="modal-<%= m.beer %>" type="checkbox" />
-					<div class="modal-window">
-						<div class="modal-inner">
-							<label class="modal-close" for="modal-<%= m.beer %>"></label>
-							<%= render partial: "beer", locals: {beer: m.beers.first} %>
+
+<% if  @user.just_created? %>
+	<h1>Goal!!!</h1>
+<% end %>
+	<div id="movie-cards">
+		<div class="cards">
+		<% @movies.each do |m| %>
+			<div class="card">
+				<div class="card-image">
+					<span class="movie-image"><%= image_tag m.get_poster %></span>
+				</div>
+				<div class="card-header">
+		      <%= m.name %>
+		    </div>
+				<div class="card-copy">
+					<p>
+						Year: <%= m.year %>
+					</p>
+					<p> Rating: <%= m.rating %></p>
+					<p><button><label for="modal-<%= m.beer %>"><i class="fa fa-beer"></i>Movie Beer</label></button></p>
+					<div class="modal">
+						<input class="modal-state" id="modal-<%= m.beer %>" type="checkbox" />
+						<div class="modal-window">
+							<div class="modal-inner">
+								<label class="modal-close" for="modal-<%= m.beer %>"></label>
+								<%= render partial: "beer", locals: {beer: m.beers.first} %>
+							</div>
 						</div>
 					</div>
+					<%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, m, method: :delete, remote: true, class: "delete-movie" %>
 				</div>
-				<%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, m, method: :delete, remote: true, class: "delete-movie" %>
 			</div>
+		<% end %>
 		</div>
-	<% end %>
 	</div>
-</div>

@@ -39,23 +39,12 @@
             </nav>
             <div class="navigation-tools">
               <div class="search-bar">
-                <%= form_for @movie, remote: true, html: { class: "navbar-form navbar-left", role: "search" } do |f|%>
-                    <div class="form-group">
-                      <%= f.text_field :name, class: "form-control", placeholder: "Movie Name" %>
-                    </div>
-                      <%= f.button do %>
-                      <label for="modal-search">Add Movie</label>
-                      <% end %>
-                <% end %>
-                <div class="modal">
-                  <input class="modal-state" id="modal-search" type="checkbox" />
-                  <div class="modal-window">
-                    <div class="modal-inner">
-                      <label class="modal-close" for="modal-search"></label>
-                      <%= render partial: "layouts/search_beer", locals: {user: @user} %>
-                    </div>
+                <%= form_for @movie, html: { class: "navbar-form navbar-left", role: "search" } do |f|%>
+                  <div class="form-group">
+                    <%= f.text_field :name, class: "form-control", placeholder: "Movie Name" %>
                   </div>
-                </div>
+                  <%= f.button %>
+                <% end %>
               </div>
             </div>
       <% end %>
