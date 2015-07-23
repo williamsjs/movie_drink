@@ -65,17 +65,17 @@ class Beer < ActiveRecord::Base
 
     def bad_beers
       beers = ["bud", "natural", "coors"]
-      beers[rand(beers.length)]
+      beers[rand(beers.length)].gsub(" ", "%20")
     end
 
     def mediocre_beers
       beers = ["samuel adams", "blue moon", "newcastle"]
-      beers[rand(beers.length)]
+      beers[rand(beers.length)].gsub(" ", "%20")
     end
 
     def good_beers
       beers = ["guiness"]
-      beers[rand(beers.length)]
+      beers[rand(beers.length)].gsub(" ", "%20")
     end
 
     def great_beers

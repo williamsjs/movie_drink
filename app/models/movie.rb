@@ -8,25 +8,30 @@ class Movie < ActiveRecord::Base
     beers.first.id unless beers.empty?
   end
 
+  def movie_json
+    get_movie(name)
+  end
+
   def redo(user)
-    update(name: get_name, rating: get_rating, year: get_year, poster: get_poster, user: user) unless get_movie(name)['results'].nil?
+    movie = movie_json
+    update(name: get_name(movie), rating: get_rating(movie), year: get_year(movie), poster: get_poster(movie), user: user) unless movie['results'].nil?
   end
 
-  def get_name
-    get_movie(name)['results'][0]['original_title']
+  def get_name(movie)
+    movie['results'][0]['original_title']
   end
 
-  def get_rating
-    get_movie(name)['results'][0]['vote_average']
+  def get_rating(movie)
+    movie['results'][0]['vote_average']
   end
 
-  def get_year
-    date = get_movie(name)['results'][0]['release_date']
+  def get_year(movie)
+    date = movie['results'][0]['release_date']
     date[0..3]
   end
 
-  def get_poster
-    poster_path = get_movie(name)['results'][0]['poster_path']
+  def get_poster(movie)
+    poster_path = movie['results'][0]['poster_path']
     "http://image.tmdb.org/t/p/w500/#{poster_path}" if !poster_path.nil?
   end
 
