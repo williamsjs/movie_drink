@@ -80,7 +80,7 @@ class Beer < ActiveRecord::Base
 
     def great_beers
       beers = ["sierra nevada"]
-      beers[rand(beers.length)]
+      beers[rand(beers.length)].gsub(" ", "%20")
     end
 
 end
