@@ -8,7 +8,7 @@
 			</div>
 		</div>
 	</div>
-	<span id="quote">"I've been waiting for you, <%= @user.name %>. We meet again at last. The circle is now complete. When I left you, I was but the learner; now I am the master."</span>
+	<span id="quote"><%= Character.get_quote %></span>
 </div>
 
 <% if  @user.just_created? %>
