@@ -14,7 +14,7 @@ class Movie < ActiveRecord::Base
 
   def redo(user)
     movie = movie_json
-    update(name: get_name(movie), rating: get_rating(movie), year: get_year(movie), poster: get_poster(movie), user: user) unless movie['results'] == []
+    update(name: get_name(movie), rating: get_rating(movie), year: get_year(movie), poster: get_poster(movie), user: user) unless movie['results'].nil? || movie['results'] == []
   end
 
   def get_name(movie)
