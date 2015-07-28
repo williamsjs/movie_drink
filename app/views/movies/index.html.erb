@@ -1,4 +1,4 @@
-<style div.hero {background-image: url('<%= asset_path Character.last.main_image %>';} )></style>
+<style> .hero {background-image: url('<%= asset_path @guide.main_image %>'); }</style>
 
 <div class="hero">
 	<div class="hero-inner">
@@ -10,7 +10,7 @@
 			</div>
 		</div>
 	</div>
-	<span id="quote" class="speech">"<%= Character.get_quote %>"</span>
+	<span id="quote" class="speech">"<%= @guide.get_quote(@user) %>"</span>
 </div>
 
 <% if  @user.just_created? %>

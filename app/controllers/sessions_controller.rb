@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
       user = User.find_by_email(params[:email])
       if user && user.authenticate(params[:password])
         session[:user_id] = user.id
-        redirect_to movies_path notice: "login complete"
+        redirect_to characters_index_path
       else
         flash[:notice] = "Invalid Email or Password"
       end

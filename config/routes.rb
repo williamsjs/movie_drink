@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
+  get 'characters/index'
+
   get 'drinks/index'
+
+  resources :characters do
+    member do
+      get 'establish_character'
+    end
+  end
 
   resources :actors
   resources :users

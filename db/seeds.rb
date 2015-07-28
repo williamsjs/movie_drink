@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-darth = Character.create(name: "Darth Vader")
-john = Character.create(name: "John McClain")
+darth = Character.create(name: "Darth Vader", main_image: "darth.jpg")
+john = Character.create(name: "John McClain", main_image: "john.jpg")
 blondie = Character.create(name: "Man With No Name", main_image: "clint.jpg")
 
 MainQuote.create(quote: "I've been waiting for you, name. We meet again at last. The circle is now complete. When I left you, I was but the learner; now I am the master.", character: darth)
