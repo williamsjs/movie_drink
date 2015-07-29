@@ -16,8 +16,4 @@ class User < ActiveRecord::Base
     Time.now - movies.last.created_at < 3 unless movies == []
   end
 
-  def update_without_password(user_character)
-    update!(character: user_character)
-  end
-
 end

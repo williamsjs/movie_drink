@@ -7,7 +7,7 @@ class CharactersController < ApplicationController
   end
 
   def establish_character
-    @user.update_without_password(@character)
+    @user.update!(character: @character)
     redirect_to movies_path
   end
 

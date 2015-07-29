@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(version: 20150728192206) do
     t.string   "email"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.string   "character_id"
+    t.string   "character_idr"
   end
 
 end
