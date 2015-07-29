@@ -1,9 +1,10 @@
 <div id="choose-character">
-  
-  <h1>Choose a Movie Guide</h1>
+
+  <h1>Choose Guide</h1>
 
   <% @characters.each do |c| %>
 
+    <a href="<%=  %>"<%= image_tag c.main_image %>
     <p><%= link_to c.name, establish_character_character_path(c) %></p>
 
   <% end %>
