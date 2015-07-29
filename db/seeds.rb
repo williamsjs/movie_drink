@@ -6,13 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-darth = Character.create(name: "Darth Vader", main_image: "darth.jpg")
-john = Character.create(name: "John McClain", main_image: "john.jpg")
-blondie = Character.create(name: "Man With No Name", main_image: "clint.jpg")
+Character.create(name: "Darth Vader", main_image: "darth.jpg")
+Character.create(name: "John McClain", main_image: "john.jpg")
+Character.create(name: "Man With No Name", main_image: "clint.jpg")
 
-MainQuote.create(quote: "I've been waiting for you, name. We meet again at last. The circle is now complete. When I left you, I was but the learner; now I am the master.", character: darth)
-MainQuote.create(quote: "Welcome to the party, name!", character: john)
-MainQuote.create(quote: "You see, in this world there's two kinds of people, name: Those with loaded guns and those who dig. You dig." , character: blondie)
+MainQuote.create(quote: "I've been waiting for you, name. We meet again at last. The circle is now complete. When I left you, I was but the learner; now I am the master.", character: Character.find_by_name("Darth Vader"))
+MainQuote.create(quote: "Welcome to the party, name!", character: Character.find_by_name("John McClain"))
+MainQuote.create(quote: "You see, in this world there's two kinds of people, name: Those with loaded guns and those who dig. You dig." , character: Character.find_by_name("Man With No Name"))
 
 BeerQuote.create(positive: true, character: Character.find_by_name("Darth Vader"), quote: "This is a good beer. Search your feelings, you know it to be true")
 BeerQuote.create(positive: true, character: Character.find_by_name("John McClain"), quote: "Happy Trails, bad beer.  This stuff is good")
