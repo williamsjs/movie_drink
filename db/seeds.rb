@@ -14,10 +14,10 @@ MainQuote.create(quote: "I've been waiting for you, name. We meet again at last.
 MainQuote.create(quote: "Welcome to the party, name!", character: john)
 MainQuote.create(quote: "You see, in this world there's two kinds of people, name: Those with loaded guns and those who dig. You dig." , character: blondie)
 
-# BeerQuote.create(positive: true, character: darth, quote: "This is a good beer. Search your feelings, you know it to be true")
-# BeerQuote.create(positive: true, character: john, quote: "Happy Trails, bad beer.  This stuff is good")
-# BeerQuote.create(positive: true, character: blondie, quote: "When a man with .45 meets a man with a rifle, you said, the man with a pistol's a dead man. Let's see if that's true. Go ahead, load up and shoot for this beer")
-#
-# BeerQuote.create(positive: false, character: darth, quote: "This beer is beaten. It is useless to resist. Don't let yourself be destroyed as Obi-Wan did. ")
-# BeerQuote.create(positive: false, character: john, quote: "Eeeh! Sorry Hans, wrong beer. Would you like to go for Double Jeopardy where the scores can really change? ")
-# BeerQuote.create(positive: false, character: blondie, quote: "Get three coffins ready. My mistake, four coffins. This beer is nasty")
+BeerQuote.create(positive: true, character: darth, quote: "This is a good beer. Search your feelings, you know it to be true")
+BeerQuote.create(positive: true, character: john, quote: "Happy Trails, bad beer.  This stuff is good")
+BeerQuote.create(positive: true, character: blondie, quote: "When a man with .45 meets a man with a rifle, you said, the man with a pistol's a dead man. Let's see if that's true. Go ahead, load up and shoot for this beer")
+
+BeerQuote.create(positive: false, character: darth, quote: "This beer is beaten. It is useless to resist. Don't let yourself be destroyed as Obi-Wan did. ")
+BeerQuote.create(positive: false, character: john, quote: "Eeeh! Sorry Hans, wrong beer. Would you like to go for Double Jeopardy where the scores can really change? ")
+BeerQuote.create(positive: false, character: blondie, quote: "Get three coffins ready. My mistake, four coffins. This beer is nasty")
