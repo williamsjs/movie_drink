@@ -4,6 +4,7 @@ class CharactersController < ApplicationController
 
   def index
     @characters = Character.all
+    @user.update!(character: Character.first) # sets default character if no character chosen
   end
 
   def establish_character

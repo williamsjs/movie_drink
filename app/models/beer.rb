@@ -1,3 +1,20 @@
+# == Schema Information
+#
+# Table name: beers
+#
+#  id          :integer          not null, primary key
+#  name        :string
+#  user_id     :integer
+#  movie_id    :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  abv         :string
+#  description :text
+#  url_image   :string
+#  style       :string
+#  location    :string
+#
+
 class Beer < ActiveRecord::Base
   belongs_to :user
   belongs_to :movie

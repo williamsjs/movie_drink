@@ -20,6 +20,7 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+gem 'annotate', '~> 2.6.6'
 # Use jquery as the JavaScript library
 gem 'puma'
 gem 'jquery-rails'
