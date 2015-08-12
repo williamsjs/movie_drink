@@ -4,8 +4,10 @@ one:
   name: John Klein
   email: joe@yahoo.com
   password_digest: <%= BCrypt::Password.create("password") %>
+  character: :one
 
 two:
   name: Jim Baboon
   email: jim@yahoo.com
   password_digest: <%= BCrypt::Password.create("password") %>
+  character: :one

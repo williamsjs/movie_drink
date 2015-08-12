@@ -7,28 +7,12 @@ class UsersControllerTest < ActionController::TestCase
     session[:user_id] = @user.id
   end
 
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:users)
-  end
-
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
   test "should create user" do
     assert_difference('User.count') do
       post :create, user: { email: "cool@coolio.com", name: "Cookio", password: "password" }
     end
 
-    assert_redirected_to movies_path
-  end
-
-  test "should show user" do
-    get :show, id: @user
-    assert_response :success
+    assert_redirected_to characters_index_path
   end
 
   test "should get edit" do
