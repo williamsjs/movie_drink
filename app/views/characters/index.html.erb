@@ -4,7 +4,9 @@
 
   <% @characters.each do |c| %>
 
-    <%= image_tag c.main_image %>
+    <%= link_to establish_character_character_path(c) do  %>
+        <%= image_tag c.main_image %> %>
+    <% end %>
     <p><%= link_to c.name, establish_character_character_path(c) %></p>
 
   <% end %>
