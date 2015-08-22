@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Movie, type: :model do
+describe Character, type: :model do
   it "blah blah blah" do
     expect(true).to eql(true)
   end

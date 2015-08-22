@@ -1,5 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe Beer, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Beer, type: :model do
+  it "blah blah blah" do
+    expect(true).to eql(true)
+  end
 end
