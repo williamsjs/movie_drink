@@ -1,7 +1,17 @@
 require 'rails_helper'
+require './app/models/movie.rb'
 
-describe Movie, type: :model do
-  it "blah blah blah" do
-    expect(true).to eql(true)
+class Movie
+  private
+    def get_movie(name)
+      JSON.parse(File.open("./test/movie.json").read)
+    end
+end
+
+describe Movie do
+
+  it "has a valid factory" do
+    FactoryGirl.create(:movie)
   end
+
 end
