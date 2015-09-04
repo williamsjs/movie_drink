@@ -19,11 +19,13 @@ class User < ActiveRecord::Base
 
   validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }, uniqueness: true
   validates :email, :password, :name, presence: true, on: :create
+  reverse_geocoded_by :latitude, :longitude,
+   :address => :location
+  after_validation :reverse_geocode  # auto-fetch address
 
   def get_last_beer
     beers.last
   end
-
 
   def just_created?
     Time.now - movies.last.created_at < 3 unless movies == []

@@ -1,12 +1,16 @@
 <% if !beer.nil? %>
-  <h1>Recommended Beer: </h1>
-  <ul>
-    <li><%= image_tag beer.url_image %></li>
-    <li><%= beer.name %></li>
-    <li>ABV: <%= beer.abv %></li>
-    <li>Description: <%= beer.description %></li>
-    <h1>Possible Local Locations for your beer</h1>
-    <iframe width="600" height="450" frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?q=hillsborough&key=<%=ENV['MAPS_KEY']%>" allowfullscreen></iframe>
-  </ul>
+  <div id="beer-modal">
+    <h1>Recommended Beer: </h1>
+    <ul>
+      <li><%= image_tag beer.url_image %></li>
+      <li><%= beer.name %></li>
+      <li>ABV: <%= beer.abv %></li>
+      <li>Description: <%= beer.description %></li>
+      <h1>Get your recommended brew now!</h1>
+      <iframe width="600" height="450" frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?q=hillsborough&key=<%=ENV['MAPS_KEY']%>" allowfullscreen></iframe>
+    </ul>
+  </div>
+<% else %>
+  <h1>No Beer Available.... bummer</h1>
 <% end %>

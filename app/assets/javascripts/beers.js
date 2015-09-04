@@ -8,5 +8,4 @@ function showNewBeer() {
   });
 }
 
-
 $(showNewBeer);
