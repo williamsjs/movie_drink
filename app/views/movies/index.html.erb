@@ -18,7 +18,7 @@
 		<div class="modal-window">
 			<div class="modal-inner">
 				<label class="modal-close" for="modal-last-beer"></label>
-				<%= render partial: "beer", locals: {beer: @user.get_last_beer} %>
+				<%= render partial: "beer", locals: {beer: @user.get_last_beer, user: @user} %>
 			</div>
 		</div>
 	</div>

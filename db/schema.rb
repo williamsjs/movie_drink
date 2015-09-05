@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150904170325) do
+ActiveRecord::Schema.define(version: 20150904181445) do
 
   create_table "beer_quotes", force: :cascade do |t|
     t.text     "quote"
@@ -69,6 +69,8 @@ ActiveRecord::Schema.define(version: 20150904170325) do
     t.integer  "character_id"
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "location"
+    t.string   "address"
   end
 
 end

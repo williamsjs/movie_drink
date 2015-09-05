@@ -31,4 +31,11 @@ class User < ActiveRecord::Base
     Time.now - movies.last.created_at < 3 unless movies == []
   end
 
+  def return_map
+    address_arr = self.address.split(", ")
+    city = address_arr.first.gsub(/\s/, "+")
+    state = address_arr.last unless address_arr.last.length != 2
+    "https://www.google.com/maps/embed/v1/place?q=#{city}+#{state}&key=#{ENV['MAPS_KEY']}"
+  end
+
 end
