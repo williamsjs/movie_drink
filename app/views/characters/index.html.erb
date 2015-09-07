@@ -1,14 +1,18 @@
 <div id="choose-character">
+  <div class="cards">
+    <h1>Choose Guide</h1>
 
-  <h1>Choose Guide</h1>
-
-  <% @characters.each do |c| %>
-
-    <%= link_to establish_character_character_path(c) do  %>
-        <%= image_tag c.main_image %> %>
+    <% @characters.each do |c| %>
+    <div class="card">
+      <%= link_to establish_character_character_path(c) do  %>
+          <div class="card-image">
+            <%= image_tag c.main_image %>
+          </div>
+      <% end %>
+      <div class="card-header">
+        <%= link_to c.name, establish_character_character_path(c) %>
+      </div>
+    </div>
     <% end %>
-    <p><%= link_to c.name, establish_character_character_path(c) %></p>
-
-  <% end %>
-
+  </div>
 </div>
