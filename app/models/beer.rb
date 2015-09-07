@@ -38,7 +38,7 @@ class Beer < ActiveRecord::Base
     abv = get_abv(beer, random)
     location = get_location(beer, random)
     url_image = get_image(beer, random)
-    update(abv: abv, description: description, name: name, url_image: url_image)
+    update(abv: abv, description: description, name: name, url_image: url_image, location: location)
   end
 
   def get_brewery(beer, random)
@@ -70,7 +70,9 @@ class Beer < ActiveRecord::Base
   end
 
   def get_location(beer, random)
-
+    city = beer["response"]["beers"]["items"][random]["brewery"]["location"]["brewery_city"]
+    state = beer["response"]["beers"]["items"][random]["brewery"]["location"]["brewery_state"]
+    "#{city}, #{state}"
   end
 
 
