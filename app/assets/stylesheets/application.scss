@@ -9,10 +9,20 @@
 @import "scaffolds";
 @import "font-awesome";
 
-
+@font-face {
+    font-family: 'refugemedium';
+    src: url('<%= asset_path('refuge-webfont.eot') %>');
+    src: url('<%= asset_path(refuge-webfont.eot?#iefix') format('embedded-opentype'),
+         url('<%= asset_path(refuge-webfont.woff2') format('woff2'),
+         url('<%= asset_path(refuge-webfont.woff') format('woff'),
+         url('<%= asset_path(refuge-webfont.ttf') format('truetype'),
+         url('<%= asset_path(refuge-webfont.svg#refugemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
-   font-family: 'arkhipregular';
+   font-family: 'refugemedium';
    background: #282828;
 }
 
@@ -21,7 +31,7 @@ body {
   margin-left: 75px;
   color: black;
   font-weight: 100px;
-  font-family: 'arkhipregular';
+  font-family: 'refugemedium';
 }
 // $color1: #282828;
 // $color2: #414141;
