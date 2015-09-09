@@ -42,7 +42,7 @@ class Beer < ActiveRecord::Base
   end
 
   def get_brewery(beer, random)
-    beer["response"]["beers"]
+    beer["response"]["beers"]["items"][random]["brewery"]
   end
 
   def get_image(beer, random)
@@ -50,7 +50,7 @@ class Beer < ActiveRecord::Base
   end
 
   def get_style(beer, random)
-
+    beer["response"]["beers"]["items"][random]["beer"]["beer_style"]
   end
 
   def get_name(beer, random)
@@ -98,7 +98,7 @@ class Beer < ActiveRecord::Base
     end
 
     def great_beers
-      beers = ["sierra nevada"]
+      beers = ["sierra nevada", "stone"]
       beers[rand(beers.length)].gsub(" ", "%20")
     end
 
