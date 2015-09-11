@@ -12,7 +12,7 @@
 	<span id="quote" class="speech">"<%= @guide.get_quote(@user) %>"</span>
 </div>
 
-<% if  @user.just_created? %>
+<% if @user.just_created? %>
 	<div class="modal">
 		<input class="modal-state" id="modal-last-beer" type="checkbox" />
 		<div class="modal-window">
