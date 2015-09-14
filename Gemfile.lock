@@ -80,7 +80,6 @@ GEM
     font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
-    geocoder (1.2.9)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     guard (2.13.0)
@@ -252,7 +251,6 @@ DEPENDENCIES
   factory_girl_rails
   faker
   font-awesome-rails
-  geocoder
   guard-rspec
   httparty
   jbuilder (~> 2.0)

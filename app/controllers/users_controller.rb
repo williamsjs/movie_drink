@@ -32,7 +32,7 @@ class UsersController < ApplicationController
         format.html { redirect_to characters_index_path }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html { render :new }
+        format.html { redirect_to sessions_login_path }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
