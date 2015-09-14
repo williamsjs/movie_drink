@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
     unless address == nil
       address_arr = self.address.split(", ")
       city = address_arr.first.gsub(/\s/, "+")
-      state = address_arr.last unless address_arr.last.length != 2
+      state = address_arr.last 
       url = "https://www.google.com/maps/embed/v1/search?q=breweries+#{city}+#{state}&key=#{ENV['MAPS_KEY']}"
     end
   end
