@@ -29,13 +29,11 @@ class User < ActiveRecord::Base
   end
 
   def return_map
-    if address != nil
+    unless address == nil || address == ""
       address_arr = self.address.split(", ")
       city = address_arr.first.gsub(/\s/, "+")
       state = address_arr.last
       url = "https://www.google.com/maps/embed/v1/search?q=breweries+#{city}+#{state}&key=#{ENV['MAPS_KEY']}"
-    else
-      "gotcha"
     end
   end
 
