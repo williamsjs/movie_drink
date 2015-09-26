@@ -2,8 +2,8 @@
 
 one:
   quote: MyText
-  character_id: 1
+  character: :one
 
 two:
   quote: MyText
-  character_id: 1
+  character: :one
