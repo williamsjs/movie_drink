@@ -1,9 +1,9 @@
 class Beer < ActiveRecord::Base
   belongs_to :user
   belongs_to :movie
-  after_create :add_details
+  after_create :determine_beer
 
-  def add_details
+  def determine_beer
     beer = nil
     if movie.rating < 5
       beer = search_beer(bad_beers)
@@ -14,13 +14,17 @@ class Beer < ActiveRecord::Base
     elsif movie.rating >= 5
       beer = search_beer(mediocre_beers)
     end
+    get_beer_variables(beer)
+  end
+
+  def get_beer_variables(beer)
     count = get_count(beer)
     random = rand(count)
     name = get_name(beer, random)
-    description = get_description(beer, random)
-    abv = get_abv(beer, random)
-    location = get_location(beer, random)
-    url_image = get_image(beer, random)
+    update_beer(get_abv(beer, random), get_description(beer, random), get_name(beer, random), get_image(beer, random), get_location(beer, random))
+  end
+
+  def update_beer(abv, description, name, url_image, location)
     update(abv: abv, description: description, name: name, url_image: url_image, location: location)
   end
 

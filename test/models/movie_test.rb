@@ -48,6 +48,11 @@ class MovieTest < ActiveSupport::TestCase
     assert_equal users(:one), star_trek.user
   end
 
+  test "movie should not save with invalid title" do
+    movie = Movie.new(name: "fdlaksjdfasdf")
+    assert_not movie.save
+  end
+
   test "movie creates beer on create" do
     skip
   end
