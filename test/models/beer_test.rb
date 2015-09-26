@@ -12,7 +12,9 @@ class Beer
 end
 
 class BeerTest < ActiveSupport::TestCase
+
   test "the truth" do
     assert true
   end
+  
 end

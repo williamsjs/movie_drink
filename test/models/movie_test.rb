@@ -24,12 +24,27 @@ end
 
 class MovieTest < ActiveSupport::TestCase
 
-  test "movie gets info from API" do
-    star_trek = Movie.new(name: "star trek")
+  test "movie gets name from api" do
+    star_trek = Movie.create(name: "star trek")
     star_trek.redo(users(:one))
     assert_equal "Star Trek", star_trek.name
+  end
+
+  test "movie gets rating from api" do
+    star_trek = Movie.create(name: "star trek")
+    star_trek.redo(users(:one))
     assert_equal 7.3, star_trek.rating
+  end
+
+  test "movie gets year from api" do
+    star_trek = Movie.create(name: "star trek")
+    star_trek.redo(users(:one))
     assert_equal 2009, star_trek.year
+  end
+
+  test "movie gets assigned user" do
+    star_trek = Movie.create(name: "star trek")
+    star_trek.redo(users(:one))
     assert_equal users(:one), star_trek.user
   end
 
