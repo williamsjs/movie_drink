@@ -1,0 +1,1159 @@
+{
+    "meta":{
+        "code":200,
+        "response_time":{
+            "time":0.172,
+            "measure":"seconds"
+        },
+        "init_time":{
+            "time":0.004,
+            "measure":"seconds"
+        }
+    },
+    "notifications":[
+
+    ],
+    "response":{
+        "message":"",
+        "brewery_id":false,
+        "search_type":"",
+        "type_id":0,
+        "search_version":3,
+        "found":439,
+        "offset":0,
+        "limit":25,
+        "term":"coors",
+        "parsed_term":"coors*",
+        "beers":{
+            "count":25,
+            "items":[
+                {
+                    "checkin_count":718190,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":3834,
+                        "beer_name":"Coors Light",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-coorsLight.jpg",
+                        "beer_abv":4.2,
+                        "beer_ibu":10,
+                        "beer_description":"Coors Light is Coors Brewing Company's largest-selling brand and the fourth best-selling beer in the U.S. Introduced in 1978, Coors Light has been a favorite in delivering the ultimate in cold refreshment for more than 25 years. The simple, silver-toned can caught people's attention and the brew became nicknamed the \\Silver Bullet\\\" as sales climbed.\"",
+                        "created_at":"Sat, 21 Aug 2010 09:26:35 +0000",
+                        "beer_style":"American Light Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":146597,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":3833,
+                        "beer_name":"Coors Original",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-3833_6619d_sm.jpeg",
+                        "beer_abv":5,
+                        "beer_ibu":0,
+                        "beer_description":"Coors beer, first introduced by Adolph Coors in April 1874, is brewed in the Rockies for a uniquely crisp, clean, and drinkable \"Mile High Taste\".",
+                        "created_at":"Sat, 21 Aug 2010 09:26:35 +0000",
+                        "beer_style":"North American Adjunct Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":114558,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":3840,
+                        "beer_name":"George Killian's Irish Red",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-_3840_7f2582907fe47bf40dedf7d05538.jpeg",
+                        "beer_abv":4.9,
+                        "beer_ibu":0,
+                        "beer_description":"Killian's Irish Red is a traditional lager with an authentic Irish heritage, based on the Killian family's recipe created for the Killian's brewery in Enniscorthy, Ireland in 1864. Coors acquired the rights to brew and market the product in America and Killian's was introduced to the U.S. in 1981.\n\nKillian's Irish Red derives its distinctive red-amber color and taste from a special caramel malt that has been roasted at a high temperature longer and more slowly than most malts. There are no coloring agents or artificial additives used in brewing Killian's. The brew is known for its rich amber color and thick, creamy head.",
+                        "created_at":"Sat, 21 Aug 2010 09:26:35 +0000",
+                        "beer_style":"American Amber \/ Red Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":99243,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":3836,
+                        "beer_name":"Molson Canadian",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-3836_0260b_sm.jpeg",
+                        "beer_abv":5,
+                        "beer_ibu":0,
+                        "beer_description":"Molson Canadian is Molson Brewing Company's flagship brand.  Starting with crystal clear water, malted barley and the finest hops, Molson Canadian is slowly fermented to produce a smooth, refreshing beer with a genuine taste. Clean and clear, crisp and cold, Molson Canadian is a classic lager.",
+                        "created_at":"Sat, 21 Aug 2010 09:26:35 +0000",
+                        "beer_style":"North American Adjunct Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":79535,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":5845,
+                        "beer_name":"Keystone Light",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-coorsKeystoneLight.jpg",
+                        "beer_abv":4.2,
+                        "beer_ibu":0,
+                        "beer_description":"Keystone beer is a product of the Coors Brewing Company in Golden, Colorado. It was first introduced in Chico, California in September 1989. Keystone can be found in can, keg, and occasionally bottled form. Its \"Light\" variety is commonly labeled as \"high school beer\" due to it being very inexpensive and thus popular with young adults in the United States. Keystone Light has a 4.2% ABV a concentration less than standard American lagers, and roughly equal to other macro \"light\" brews.",
+                        "created_at":"Sat, 21 Aug 2010 07:54:25 +0000",
+                        "beer_style":"American Light Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":78286,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":114278,
+                        "beer_name":"Third Shift - Amber Lager",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-ThirdShift_114278.jpeg",
+                        "beer_abv":5.3,
+                        "beer_ibu":0,
+                        "beer_description":"",
+                        "created_at":"Thu, 29 Dec 2011 10:47:34 +0000",
+                        "beer_style":"American Amber \/ Red Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":65575,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":6927,
+                        "beer_name":"Batch 19",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-_6927_sm_4d4d9a8c2c179a6e1ec4c7ba3502a6.jpeg",
+                        "beer_abv":5.5,
+                        "beer_ibu":26,
+                        "beer_description":"In 1919, beer was banned. Barrels were broken. Breweries went belly up. Drinking a beer became an act of protest against those in power. Each toast was a citizen's demand to enjoy life's simple pleasures. When beer became legal again 14 years later, it was never the same. That is, until a few years ago when we discovered an old beer recipe in the basement archives of the brewery dating back before Prohibition. Batch 19™ is inspired by the last batches of beer brewed before 1919.",
+                        "created_at":"Fri, 29 Oct 2010 08:48:45 +0000",
+                        "beer_style":"Pale Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":31721,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":629197,
+                        "beer_name":"Coors Light Summer Brew",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-629197_04882_sm.jpeg",
+                        "beer_abv":3.9,
+                        "beer_ibu":0,
+                        "beer_description":"",
+                        "created_at":"Wed, 26 Mar 2014 19:14:23 +0000",
+                        "beer_style":"Radler",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":25581,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":4899,
+                        "beer_name":"Rickard's Red Ale",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-RickardsRedAle_4899.jpeg",
+                        "beer_abv":5.2,
+                        "beer_ibu":0,
+                        "beer_description":"Crafted using three different malted barleys, Pacific Northwest hops and the finest Brewer's Caramel, Rickard's Red is exceptionally flavorful with a smooth finish. Enjoy Canada's favorite red beer with its proud pub heritage served cold in a pint glass.",
+                        "created_at":"Sat, 21 Aug 2010 09:26:35 +0000",
+                        "beer_style":"Irish Red Ale",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":19667,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":24491,
+                        "beer_name":"Carling",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-Carling_24491.jpeg",
+                        "beer_abv":4,
+                        "beer_ibu":0,
+                        "beer_description":"Carling, Britain's best selling lager for over three decades, is made from 100% British Barley to ensure we provide great taste every sip of the way.\n\nn the mid 1900s our team of British brewers discovered a way of bringing together the involving flavour of ale with the pleasurable refreshment of continental lager. In doing so, they produced an all round beer enjoyed by everyone. The process became known as complete brewing. It’s the unique combination of flavour and refreshment that makes Carling the complete beer, best enjoyed as part of a round with your mates.",
+                        "created_at":"Sat, 15 Jan 2011 23:25:55 +0000",
+                        "beer_style":"Pale Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":28894,
+                        "brewery_name":"Molson Coors (UK)",
+                        "brewery_slug":"molson-coors-uk",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsUK_28894.jpeg",
+                        "country_name":"England",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com\/"
+                        },
+                        "location":{
+                            "brewery_city":"Burton-On-Trent,",
+                            "brewery_state":"Staffordshire",
+                            "lat":52.8047,
+                            "lng":-1.62685
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":15660,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":9447,
+                        "beer_name":"Cobra Premium",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-CobraPremium_9447.jpeg",
+                        "beer_abv":4.8,
+                        "beer_ibu":0,
+                        "beer_description":"Brewed to an authentic Indian recipe with a modern twist for an extra smooth taste. A combination so good, it's won Cobra the title of World's most awarded beer. It's also a renowned beer award-winner because in its own unique way Cobra combines the smoothness of ale with the refreshment of lager. Bottle 4.8% \/ Draught 4.3%.",
+                        "created_at":"Tue, 16 Nov 2010 06:37:28 +0000",
+                        "beer_style":"Pale Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":28894,
+                        "brewery_name":"Molson Coors (UK)",
+                        "brewery_slug":"molson-coors-uk",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsUK_28894.jpeg",
+                        "country_name":"England",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com\/"
+                        },
+                        "location":{
+                            "brewery_city":"Burton-On-Trent,",
+                            "brewery_state":"Staffordshire",
+                            "lat":52.8047,
+                            "lng":-1.62685
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":14170,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":4898,
+                        "beer_name":"Rickard's White Ale",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-RickardsWhiteAle_4898.jpeg",
+                        "beer_abv":5.4,
+                        "beer_ibu":0,
+                        "beer_description":"",
+                        "created_at":"Sat, 21 Aug 2010 09:26:35 +0000",
+                        "beer_style":"Witbier",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":12040,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":1989,
+                        "beer_name":"Golden",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-Golden_1989.jpeg",
+                        "beer_abv":5,
+                        "beer_ibu":0,
+                        "beer_description":"Molson Golden is a unique blend of ale and lager that delivers the spicy, fruity flavors of ale, combined with the clean, crisp, refreshing qualities of a lager.",
+                        "created_at":"Sat, 21 Aug 2010 09:26:35 +0000",
+                        "beer_style":"Blonde Ale",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":11600,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":87122,
+                        "beer_name":"George Killian's Irish Stout",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-_87122_ca15b05e1a03e8ea30a0b64ef86f.jpeg",
+                        "beer_abv":4.8,
+                        "beer_ibu":0,
+                        "beer_description":"",
+                        "created_at":"Wed, 12 Oct 2011 13:15:08 +0000",
+                        "beer_style":"Irish Dry Stout",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":9597,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":36212,
+                        "beer_name":"Old Style Pilsner",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-OldStylePilsner_36212.jpeg",
+                        "beer_abv":5,
+                        "beer_ibu":0,
+                        "beer_description":"At Pilsner we have not changed since our beer was first brewed in 1926. Why? It's right there on the bottle…. \"old style\". Those are more than just words on a beloved label. Being true to who we are has kept our drinkers loyal and kept Pilsner from being a fad.",
+                        "created_at":"Thu, 10 Mar 2011 04:48:51 +0000",
+                        "beer_style":"German Pilsner",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":9403,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":5847,
+                        "beer_name":"Keystone Ice",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-KeystoneIce_5847.jpeg",
+                        "beer_abv":5.9,
+                        "beer_ibu":0,
+                        "beer_description":"Keystone beer is a product of the Coors Brewing Company in Golden, Colorado. It was first introduced in Chico, California in September 1989. Keystone can be found in can, keg, and occasionally bottled form. Its \"Light\" variety is commonly labeled as \"high school beer\" due to it being very inexpensive and thus popular with young adults in the United States. Keystone Light has a 4.2% a concentration less than standard American lagers, and roughly equal to other macro \"light\" brews.",
+                        "created_at":"Sat, 21 Aug 2010 07:55:50 +0000",
+                        "beer_style":"North American Adjunct Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":9121,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":1060006,
+                        "beer_name":"Coors Light Citrus Radler",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-1060006_ca03a_sm.jpeg",
+                        "beer_abv":4.2,
+                        "beer_ibu":0,
+                        "beer_description":"Coors light with a blend of natural citrus flavored. ",
+                        "created_at":"Fri, 24 Apr 2015 23:43:27 +0000",
+                        "beer_style":"Radler",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":7710,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":10065,
+                        "beer_name":"Molson XXX",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-MolsonXXX_10065.jpeg",
+                        "beer_abv":7.3,
+                        "beer_ibu":0,
+                        "beer_description":"",
+                        "created_at":"Fri, 19 Nov 2010 13:56:41 +0000",
+                        "beer_style":"North American Adjunct Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":7263,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":11037,
+                        "beer_name":"Export Ale",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-11037_d8d1e_sm.jpeg",
+                        "beer_abv":5,
+                        "beer_ibu":0,
+                        "beer_description":"",
+                        "created_at":"Fri, 26 Nov 2010 03:31:08 +0000",
+                        "beer_style":"Blonde Ale",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":6869,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":320324,
+                        "beer_name":"Coors Banquet Beer (1970 Original Recipe)",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/assets\/images\/temp\/badge-beer-default.png",
+                        "beer_abv":5.5,
+                        "beer_ibu":0,
+                        "beer_description":"Limited 450 bottle release. Brewed December 10, 2012",
+                        "created_at":"Sat, 02 Mar 2013 19:46:01 +0000",
+                        "beer_style":"North American Adjunct Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":6762,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":3576,
+                        "beer_name":"Molson Ice",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-Ice_3576.jpeg",
+                        "beer_abv":5.6,
+                        "beer_ibu":0,
+                        "beer_description":"Molson Ice is an award-winning brew, slowly fermented with Molson's prize lager yeast and is then ice-filtered just before being bottled.",
+                        "created_at":"Sat, 21 Aug 2010 09:26:35 +0000",
+                        "beer_style":"North American Adjunct Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":5682,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":7687,
+                        "beer_name":"Rickard's Dark",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-RickardsDark_7687.jpeg",
+                        "beer_abv":4.8,
+                        "beer_ibu":0,
+                        "beer_description":"Though rich brown in colour, English-style porters are surprisingly medium-light in body. They’re brewed to have a hoppy bitterness and slight malt sweetness, and sometimes have caramel and chocolate flavours.\n\nRickard’s Dark makes this style its own by adding a hint of pure Quebec maple syrup for a robust, roasted flavour.",
+                        "created_at":"Sat, 06 Nov 2010 14:59:58 +0000",
+                        "beer_style":"English Porter",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":5150,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":56565,
+                        "beer_name":"Rickard's Blonde",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-RickardsBlonde_56565.jpeg",
+                        "beer_abv":5,
+                        "beer_ibu":0,
+                        "beer_description":"",
+                        "created_at":"Fri, 10 Jun 2011 18:56:59 +0000",
+                        "beer_style":"German Pilsner",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":5133,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":3835,
+                        "beer_name":"Coors Extra Gold Lager",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-_3835_9f2ec55c1a24298bd9e89db74ff7.jpeg",
+                        "beer_abv":5,
+                        "beer_ibu":0,
+                        "beer_description":"Coors' Extra Gold Lager is a rich, full-flavored lager that has a deep golden color.  Extra Gold Lager starts with the slow aging of its roasted malts, which are then combined with its other premium ingredients and slow-brewed to produce this exceptional, refined lager.",
+                        "created_at":"Sat, 21 Aug 2010 09:26:35 +0000",
+                        "beer_style":"North American Adjunct Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":399,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_slug":"coors-brewing-company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "contact":{
+                            "twitter":"",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.coors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Golden",
+                            "brewery_state":"CO",
+                            "lat":39.7591,
+                            "lng":-105.217
+                        },
+                        "brewery_active":1
+                    }
+                },
+                {
+                    "checkin_count":4904,
+                    "have_had":false,
+                    "your_count":0,
+                    "beer":{
+                        "bid":23200,
+                        "beer_name":"Carling Black Label",
+                        "beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-CarlingBlackLabel_23200.jpeg",
+                        "beer_abv":5,
+                        "beer_ibu":0,
+                        "beer_description":"",
+                        "created_at":"Sun, 09 Jan 2011 15:34:43 +0000",
+                        "beer_style":"North American Adjunct Lager",
+                        "auth_rating":0,
+                        "wish_list":false,
+                        "in_production":1
+                    },
+                    "brewery":{
+                        "brewery_id":878,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_slug":"molson-coors-canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "contact":{
+                            "twitter":"molsoncoors",
+                            "facebook":"",
+                            "instagram":"",
+                            "url":"http:\/\/www.molsoncoors.com"
+                        },
+                        "location":{
+                            "brewery_city":"Toronto",
+                            "brewery_state":"ON",
+                            "lat":43.6751,
+                            "lng":-79.5902
+                        },
+                        "brewery_active":1
+                    }
+                }
+            ]
+        },
+        "homebrew":{
+            "count":0,
+            "items":[
+
+            ]
+        },
+        "breweries":{
+            "items":[
+                {
+                    "brewery":{
+                        "brewery_id":399,
+                        "beer_count":132,
+                        "brewery_name":"Coors Brewing Company",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-coors.jpg",
+                        "country_name":"United States",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                },
+                {
+                    "brewery":{
+                        "brewery_id":878,
+                        "beer_count":116,
+                        "brewery_name":"Molson Coors Canada",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsCanada_878.jpeg",
+                        "country_name":"Canada",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                },
+                {
+                    "brewery":{
+                        "brewery_id":28894,
+                        "beer_count":57,
+                        "brewery_name":"Molson Coors (UK)",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-MolsonCoorsUK_28894.jpeg",
+                        "country_name":"England",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                },
+                {
+                    "brewery":{
+                        "brewery_id":1104,
+                        "beer_count":99,
+                        "brewery_name":"SandLot Brewery at Coors Field",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-SandLotBreweryatCoorsField_1104.jpeg",
+                        "country_name":"United States",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                },
+                {
+                    "brewery":{
+                        "brewery_id":3769,
+                        "beer_count":10,
+                        "brewery_name":"Apatinska Pivara (Molson Coors)",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-ApatinskaPivaraAD_3769_c4171.jpeg",
+                        "country_name":"Serbia",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                },
+                {
+                    "brewery":{
+                        "brewery_id":66786,
+                        "beer_count":6,
+                        "brewery_name":"Bergenbier SA (Molson Coors)",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/brewery_logos\/brewery-66786_58e87.jpeg",
+                        "country_name":"Romania",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                },
+                {
+                    "brewery":{
+                        "brewery_id":102499,
+                        "beer_count":2,
+                        "brewery_name":"Molson Coors Japan",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/assets\/images\/temp\/badge-brewery-default.png",
+                        "country_name":"Japan",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                },
+                {
+                    "brewery":{
+                        "brewery_id":81696,
+                        "beer_count":3,
+                        "brewery_name":"Bass \/  Coors Museum",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/assets\/images\/temp\/badge-brewery-default.png",
+                        "country_name":"England",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                },
+                {
+                    "brewery":{
+                        "brewery_id":118287,
+                        "beer_count":1,
+                        "brewery_name":"Hancocks\/ Coors ???",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/assets\/images\/temp\/badge-brewery-default.png",
+                        "country_name":"Wales",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                },
+                {
+                    "brewery":{
+                        "brewery_id":102317,
+                        "beer_count":1,
+                        "brewery_name":"Coors Legend (Homebrew)",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/assets\/images\/temp\/badge-brewery-default.png",
+                        "country_name":"United States",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                },
+                {
+                    "brewery":{
+                        "brewery_id":132821,
+                        "beer_count":1,
+                        "brewery_name":"Coors (Homebrew)",
+                        "brewery_label":"https:\/\/untappd.akamaized.net\/site\/assets\/images\/temp\/badge-brewery-default.png",
+                        "country_name":"Bangladesh",
+                        "location":{
+                            "brewery_city":"",
+                            "brewery_state":"",
+                            "lat":0,
+                            "lng":0
+                        }
+                    }
+                }
+            ],
+            "count":11
+        }
+    }
+}

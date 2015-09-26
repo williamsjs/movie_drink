@@ -14,4 +14,10 @@ class MoviesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should destroy movie" do
+    assert_difference('Movie.count', -1) do
+      delete :destroy, id: movies(:one)
+    end
+  end
+
 end

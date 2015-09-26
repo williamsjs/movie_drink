@@ -1,8 +1,9 @@
 class BeersController < ApplicationController
   before_action :set_beer, only: [:destroy]
+  before_action :set_user, only: [:index]
 
   def index
-    @beers = User.find(session[:user_id]).beers
+    @beers = @user.beers
   end
 
   def destroy
@@ -16,6 +17,10 @@ class BeersController < ApplicationController
 
     def set_beer
       @beer = Beer.find(params[:id])
+    end
+
+    def set_user
+      @user = User.find(session[:user_id])
     end
 
 end
