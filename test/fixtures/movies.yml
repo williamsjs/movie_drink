@@ -4,8 +4,10 @@ one:
   name: "Jaws"
   year: 1978
   user: :one
+  rating: 7.2
 
 two:
   name: "Star Wars"
   year: 1978
   user: :one
+  rating: 7.2
