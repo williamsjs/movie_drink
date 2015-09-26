@@ -16,7 +16,7 @@ class Beer
 
   private
 
-    def get_beer(name)
+    def search_beer(name)
       JSON.parse(File.open("./test/beer.json").read)
     end
 
